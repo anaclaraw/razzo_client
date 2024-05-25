@@ -1,0 +1,27 @@
+.apresentacao_section {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    background-image: url(/assets/Union.svg);
+    background-repeat: no-repeat;
+}
+
+/* .light{
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+} */
+
+.titulo-lorem {
+    font-weight: 400;
+    font-size: 46px;
+}
+
+
+.text {
+    background-color: var(--cinza-escuro);
+    width: 40%;
+    padding: 5%;
+}

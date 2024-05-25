@@ -1,0 +1,23 @@
+@import url(css/style.css);
+@import url(css/header.css);
+@import url(css/section-car.css);
+@import url(css/section-map.css);
+@import url(css/section-drivers.css);
+@import url(css/section-metrics.css);
+@import url(css/footer.css);
+
+:root{
+    --azul-claro: rgba(33, 205, 250, 1);
+    --branco: #ffffff;
+    --cinza-escuro: #090909;
+    --fonte-principal: "MuseoModerno", sans-serif;
+    --cor-de-fundo: #1B1D23;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--branco)
+}

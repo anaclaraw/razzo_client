@@ -1,0 +1,24 @@
+.titulo-corrida {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.titulo-brasil{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.mapa_section{
+    padding: 5%;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;    
+}
+
+#map {
+    height: 650px;
+    width: 100%;
+    box-shadow: 0 2px 12px 10px var(--cinza-escuro);
+}

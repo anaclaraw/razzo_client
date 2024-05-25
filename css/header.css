@@ -1,0 +1,132 @@
+.gradient-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--azul-claro), var(--cinza-escuro)), url('/assets/fundorazzoo.jpg') no-repeat center center / cover;
+    padding: 20px;
+    box-shadow: 0 20px 40px var(--cinza-escuro);
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburguer span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+}
+
+@media(max-width: 750px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--azul-claro);
+        clip-path: circle(calc(100vw + 200px) at 90% -15%);
+        transition: clip-path 1s ease-out;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .nav-menu a{
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-menu li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-menu li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-menu li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+
+    .nav-menu.active {
+        clip-path: circle(calc(1500px + 200px) at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-menu a{
+        opacity: 1;
+    }
+
+    .nav.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top:-7px;
+    }
+}
+
+.nav-menu {
+    max-width: 1280px;
+    height: 70px;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    font-size: 20px;
+    padding-block: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #000000;
+    background-color: rgba(33, 205, 250, 0.5);
+    border-radius: 10px;
+    transform: scale(1.1); 
+}
