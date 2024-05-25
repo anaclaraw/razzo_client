@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(var(--azul-claro), var(--cinza-escuro)), url('/assets/fundorazzoo.jpg') no-repeat center center / cover;
+    background: linear-gradient(rgba(33, 205, 250, 0.65), #090909), url('/assets/fundorazzoo.jpg') no-repeat center center / cover;
     padding: 20px;
     box-shadow: 0 20px 40px var(--cinza-escuro);
     height: 100vh;
