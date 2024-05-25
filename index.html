@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAZZO</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Museo+Moderno:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>RAZZO</title>
 </head>
-<body> 
+
+<body >
     <header class="header">
         <button class="hamburguer" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        <!-- <img src="/assets/fundorazzoo.jpg" id="MyImage" alt="Imagem Fixa" width="20px" height="20px" class="fixed-image"> -->
         <nav class="nav-menu">
             <ul>
                 <li><a href="#">Início</a></li>
@@ -25,16 +32,28 @@
 
     <section class="gradient-background">
         <div class="logo">
-            <img src="assets/logo.png" alt="Logo">
+            <img  src="assets/logo.png" alt="Logo">
         </div>
     </section>
 
-    <section class="tela2">
-        <div class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloribus veritatis, est ut tenetur sed voluptatum quisquam. Libero maxime dolores blanditiis nisi, similique id optio ut quae voluptatibus, perferendis ad.
-        </div>
+    <section class="apresentacao_section">
+        <article class="text">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloribus veritatis, est ut tenetur sed
+                voluptatum quisquam. Libero maxime dolores blanditiis nisi, similique id optio ut quae voluptatibus,
+                perferendis ad.
+            </p>
+        </article>
     </section>
-
+    <section class="mapa_section">
+        <h4 class="light" >Próxima corrida:</h4>
+        <h1>Brasil</h1>
+        <div id="map"></div>
+    </section>
+  
     <script src="js/script.js"></script>
+    <script src="js/mapa.js"></script>
 </body>
+<!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO--> 
+
 </html>

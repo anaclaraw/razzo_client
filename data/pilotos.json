@@ -1,0 +1,134 @@
+[
+    {
+        "position": 1,
+        "driver": "Sam Bird",
+        "team": "McLaren",
+        "time": "53:03:071"
+    },
+    {
+        "position": 2,
+        "driver": "Mitch Evans",
+        "team": "Jaguar",
+        "time": "+0.564"
+    },
+    {
+        "position": 3,
+        "driver": "Oliver Rowland",
+        "team": "Nissan",
+        "time": "+3.540"
+    },
+    {
+        "position": 4,
+        "driver": "Pascal Wehrlein",
+        "team": "Porsche",
+        "time": "+3.629"
+    },
+    {
+        "position": 5,
+        "driver": "Jake Dennis",
+        "team": "Andretti",
+        "time": "+3.722"
+    },
+    {
+        "position": 6,
+        "driver": "Antonio Felix da Costa",
+        "team": "Porsche",
+        "time": "+5.567"
+    },
+    {
+        "position": 7,
+        "driver": "Jean-Eric Vergne",
+        "team": "DS Penske",
+        "time": "+6.006"
+    },
+    {
+        "position": 8,
+        "driver": "Stoffel Vandoorne",
+        "team": "DS Penske",
+        "time": "+6.817"
+    },
+    {
+        "position": 9,
+        "driver": "Maximilian Gunther",
+        "team": "Maserati",
+        "time": "+8.085"
+    },
+    {
+        "position": 10,
+        "driver": "Sebastien Buemi",
+        "team": "Envision",
+        "time": "+8.610"
+    },
+    {
+        "position": 11,
+        "driver": "Sacha Fenestraz",
+        "team": "Nissan",
+        "time": "+9.277"
+    },
+    {
+        "position": 12,
+        "driver": "Edoardo Mortara",
+        "team": "Mahindra",
+        "time": "+9.762"
+    },
+    {
+        "position": 13,
+        "driver": "Lucas Di Grassi",
+        "team": "ABT Cupra",
+        "time": "+10.819"
+    },
+    {
+        "position": 14,
+        "driver": "Nyck De Vries",
+        "team": "Mahindra",
+        "time": "+13.677"
+    },
+    {
+        "position": 15,
+        "driver": "Jehan Daruvala",
+        "team": "Maserati",
+        "time": "+14.379"
+    },
+    {
+        "position": 16,
+        "driver": "Sergio Sette Camara",
+        "team": "ERT",
+        "time": "+17.511"
+    },
+    {
+        "position": 17,
+        "driver": "Dan Ticktum",
+        "team": "ERT",
+        "time": "+17.884"
+    },
+    {
+        "position": 18,
+        "driver": "Norman Nato",
+        "team": "Andretti",
+        "time": "+18.889"
+    },
+    {
+        "position": 19,
+        "driver": "Robin Frijns",
+        "team": "Envision",
+        "time": "+19.124"
+    },
+    {
+        "position": 20,
+        "driver": "Jake Hughes",
+        "team": "McLaren",
+        "time": "DNF"
+    },
+    {
+        "position": 21,
+        "driver": "Nick Cassidy",
+        "team": "Jaguar",
+        "time": "DNF"
+    },
+    {
+        "position": 22,
+        "driver": "Nico Muller",
+        "team": "ABT Cupra",
+        "time": "DNF"
+    }
+]
