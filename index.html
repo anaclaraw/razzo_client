@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +48,53 @@
             </p>
         </article>
     </section>
+
+    <div class="container__carrossel">
+        <div class="slider">
+            <div class="slides">
+                <!-- radio botoes -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- fim radio botoes -->
+
+                <!-- imagens do slide -->
+                <div class="slide primeiro">
+                    <img src="assets/carro-azul.svg" alt="Carro Azul">
+                </div>
+                <div class="slide">
+                    <img src="assets/carro-laranja.svg" alt="Carro Laranja">
+                </div>
+                <div class="slide">
+                    <img src="assets/carro-vermelho.svg" alt="Carro Vermelho">
+                </div>
+                <div class="slide">
+                    <img src="assets/mahindra_driver.png" alt="Aleatório">
+                </div>
+                <!-- fim imagens do slide -->
+                
+                <!-- navegacao aumotmatica -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </div>
+
     <section class="mapa_section">
         <h4 class="titulo-corrida" >Próxima Corrida:</h4>
         <h1 class="titulo-brasil">Brasil</h1>
@@ -55,6 +103,8 @@
   
     <script src="js/script.js"></script>
     <script src="js/mapa.js"></script>
+    <script src="js/carrossel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 <!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO--> 
 
