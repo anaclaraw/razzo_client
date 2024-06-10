@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/form-cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">Razzo</a>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Campeonato</a></li>
+                <li><a href="#">Métricas</a></li>
+                <li><a href="#">Login | Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cadastro_main">
+        <figure class="cadastro_figure">
+            <img src="/assets/fundorazzoo.jpg" alt="">
+        </figure>
+        <form class="cadastro_form" id="form-cadastro">
+            <h1>Cadastre-se</h1>
+            <div class="input_cadastro">
+                <input placeholder="Email..." type="email" name="email" id="email" required>
+                <input placeholder="Senha..." type="password" name="senha" id="senha" required>
+            </div>
+            <div class="input_cadastro" >
+                <input placeholder="Nome.." type="nome" name="nome" id="nome" required>
+                <input placeholder="CPF..." type="text" name="cpf" id="cpf" required>
+            </div>
+            <div class="input_cadastro" >
+                <input placeholder="Data nascimento" type="date" name="data_nasc" id="data_nasc" oninput="VerificarMaioidade(this.value)" required>
+                <input placeholder="Telefone" type="tel" name="tel" id="tel" required >
+            </div>
+            <div class="input_cadastro" >
+                <input placeholder="Endereço.." type="text" name="end" id="end" required>
+            </div>
+            <button type="submit" class="btn-cadastro">Cadastrar</button>
+            <p>Já possui conta? <a href="/login.html">Entrar</a></p>
+        </form>
+    </main>
+</body>
+<script src="/js/cadastro.js"></script>
+</html>
