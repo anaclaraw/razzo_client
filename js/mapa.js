@@ -159,7 +159,7 @@ array = [
 
 let indices = []; // Armazena o índice de cada piloto
 let markers = []; // Armazena as posiçoes dos pilotos
-let numMarkers = 0; // Quantidade de pilotos
+let numMarkers = 1; // Quantidade de pilotos
 
 // Inicializa os índices e os marcadores
 for (let i = 0; i < numMarkers; i++) {
