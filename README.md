@@ -120,3 +120,10 @@ O JavaScript do projeto está dividido em vários arquivos, cada um dos quais im
 
 **Para conluir..**
 O Razzo_Client, com suas funcionalidades atuais e o potencial de crescimento futuro, demonstra ser um projeto promissor que pode se tornar um hub central para os fãs da Fórmula E. A implementação de palpites, apostas, premiações e outras funcionalidades inovadoras impulsionaria o engajamento da comunidade, geraria receita e solidificaria o projeto como referência no universo da Fórmula E.
+
+## Desenvolvedores :alien:
+- **Eliseu Fernando Mendes dos Santos - RM98493**
+- **Ana Clara Melo de Sousa - RM559021**
+- **Yasmin Sobral - RM558757**
+- **Henrique Azevedo - RM556707**
+- **Gustavo Ikeda - RM554718**
