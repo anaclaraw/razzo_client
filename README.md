@@ -2,7 +2,7 @@
 
 **Descrição do Projeto**
 
-Este projeto é um site web que simula a experiência de um piloto de Fórmula E. Ele possui as seguintes funcionalidades:
+Este projeto é uma landing page do aplicativo Razzo de apostas (fantasy game) para Fórmula E. Ele possui as seguintes funcionalidades:
 
 * **Mapa interativo:** Um mapa que mostra as pistas de corrida da Fórmula E e permite que o usuário simule o trajeto de um piloto.
 * **Carrossel de carros:** Um carrossel que mostra os carros da Fórmula E.
