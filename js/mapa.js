@@ -27,6 +27,8 @@ var polygon = L.polygon([
 }
 ).addTo(map);
 
+
+//sequencia das cordenadas do percurso, para simular os sinais de gps
 array = [
     [-23.52648, -46.64135],
     [-23.526433636363635, -46.64125454545455],
@@ -176,7 +178,6 @@ for (let i = 0; i < numMarkers; i++) {
     indices.push(i); // Cria a lista de indices
     let marker = L.marker(array[i], makeroptions).addTo(map); // Adiciona o marcador na primeira posição
     markers.push(marker);
-    console.log(indices);
 }
 
 async function moveMarkers() {
@@ -185,7 +186,6 @@ async function moveMarkers() {
             let coord = array[indices[i]];
             markers[i].setLatLng(coord); // Move o marcador para a nova posição
             indices[i]++; // Incrementa o índice para o próximo ponto
-            console.log(indices);
         } else {
             indices[i] = 0; // Reinicia o índice se chegar ao fim do array
         }

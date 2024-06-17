@@ -1,3 +1,6 @@
+
+///////////CÓDIGO NÃO TERMINADO
+
 let rotationAngle = 20; // Começa com 20 graus
 
 window.addEventListener('scroll', function() {
@@ -15,9 +18,4 @@ window.addEventListener('scroll', function() {
 });
 
 
-/*
-window.addEventListener('scroll', function() {
-    var img = document.getElementById("MyImage");
-    var rect = img.getBoundingClientRect();
-    console.log("Posição da imagem no scroll: " + rect.top);
-})*/
+
