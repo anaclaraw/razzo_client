@@ -1,13 +1,14 @@
+
 .apresentacao_section {
-    height: 15vw;
+    height: 30vw;
     padding: 100px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: center;
     background-image: url(/assets/Union.svg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 /* .light{
@@ -23,7 +24,21 @@
 
 
 .text {
-    background-color: var(--cinza-escuro);
+    background-color: var(--cor-de-fundo);
     width: 40%;
     padding: 5%;
+    position: relative;
+    float: left;
+    text-indent: 30px;
+}
+
+@media (max-width: 48em) {
+    
+.apresentacao_section {
+    padding:0px;}
+    .text {
+        width: 80vw;
+        margin: auto;
+
+    }
 }

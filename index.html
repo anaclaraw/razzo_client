@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>RAZZO</title>
 </head>
 
-<body >
-     <header class="header">
+<body>
+    <header class="header">
         <a href="" class="logo">Razzo</a>
         <nav>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Campeonato</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#map">Campeonato</a></li>
                 <li><a href="#">Métricas</a></li>
-                <li><a href="#">Login | Cadastro</a></li>
+                <li><a href="./pages/login.html">Login | Cadastro</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <section class="gradient-background">
         <div class="logo">
-            <img  src="assets/logo.png" alt="Logo">
+            <img src="assets/logo.png" alt="Logo">
         </div>
     </section>
 
-    <section class="apresentacao_section">
-        <h2 class="titulo-lorem">Lorem</h2>
+    <section class="apresentacao_section" id="inicio">
+        <h2 class="titulo-lorem">A Razzo</h2>
         <article class="text">
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloribus veritatis, est ut tenetur sed
-                voluptatum quisquam. Libero maxime dolores blanditiis nisi, similique id optio ut quae voluptatibus,
-                perferendis ad.
+                Nossa plataforma contará com um sistema de acompanhamento em tempo real das corridas, no qual os usuários
+                poderão fazer seus palpites sobre a ordem dos rankings e possíveis acontecimentos. Esses palpites serão
+                realizados mediante o uso de moedas, sendo a quantidade de moedas investidas proporcional ao número de
+                palpites. Ao acertarem seus palpites, os usuários serão recompensados com pontos, que lhes permitirão
+                ganhar pequenos prêmios. Além disso, ao acumular uma certa quantidade de pontos, os usuários concorrerão
+                a um super prêmio entregue no fim de cada temporada.
             </p>
         </article>
     </section>
@@ -68,10 +73,10 @@
                     <img src="assets/carro-vermelho.svg" alt="Carro Vermelho">
                 </div>
                 <div class="slide">
-                    <img src="assets/mahindra_driver.png" alt="Aleatório">
+                    <img src="assets/carro-azul3.svg" alt="Aleatório">
                 </div>
                 <!-- fim imagens do slide -->
-                
+
                 <!-- navegacao aumotmatica -->
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
@@ -94,16 +99,16 @@
     </div>
 
     <section class="mapa_section">
-        <h4 class="titulo-corrida" >Próxima Corrida:</h4>
+        <h4 class="titulo-corrida">Próxima Corrida:</h4>
         <h1 class="titulo-brasil">Brasil</h1>
         <div id="map"></div>
     </section>
-  
+
     <script src="js/script.js"></script>
     <script src="js/mapa.js"></script>
     <script src="js/carrossel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-<!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO--> 
+<!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO-->
 
 </html>

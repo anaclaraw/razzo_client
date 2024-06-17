@@ -1,3 +1,9 @@
+function permissaoIdade(){ //exibe uma caixa de confimação, para sinalizar a idade
+    confirm('É necessário ser maior de idade para se casdastrar.')
+}
+
+permissaoIdade()
+
 form_cadastro = document.getElementById('form-cadastro')
 form_cadastro.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -20,7 +26,11 @@ form_cadastro.addEventListener('submit', function (event) {
         "end": end,
         "data_nasc": data_nasc,
     }
+    localStorage.setItem('user', JSON.stringify(novoUser));
     console.log(novoUser);
+    if(novoUser){
+        alert("Cadastrado com sucesso!")
+    }
 })
 
 

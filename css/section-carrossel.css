@@ -7,14 +7,14 @@
 
 .slider {
     margin: 0 auto;
-    width: 800px;
-    height: 500px;
+    width: 90%;
+    height: 800px;
     overflow: hidden;
 }
 
 .slides {
     width: 400%;
-    height: 600px;
+    height: 800px;
     display: flex;
 }
 
@@ -29,12 +29,12 @@
 }
 
 .slide img {
-    width: 800px;
+    width: 100%;
 }
 
 .manual-navigation{
     position: absolute;
-    width: 800px;
+    width: 90%;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@
 
 .navigation {
     position: absolute;
-    width: 800px;
+    width: 90%;
     margin-top: 360px;
     display: flex;
     justify-content: center;
@@ -110,9 +110,16 @@
 
 
 
-
-
-
+@media (max-width: 48em) {
+    .slider{
+        margin-top: 70%;
+    }
+.slides {
+    height: 300px;
+}
+.slider {
+    height: 300px;}
+}
 /* .carrossel__titulo {
     color: var(--cor-de-fundo);
     background-color: var(--branco);
