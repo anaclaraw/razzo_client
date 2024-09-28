@@ -51,6 +51,7 @@
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
+    max-width: 90vw;
   }
   
   /* menu */

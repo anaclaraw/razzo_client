@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/css/section-apresentacao.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/section-next-map.css">
+    <!-- <link rel="stylesheet" href="/css/section-drivers.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
@@ -14,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    
     <title>RAZZO</title>
 </head>
 
@@ -34,15 +38,16 @@
 
     <section class="gradient-background">
         <div class="logo">
-            <img src="assets/logo.png" alt="Logo">
+            <img src="assets/logo2.png" alt="Logo">
         </div>
     </section>
 
     <section class="apresentacao_section" id="inicio">
-        <h2 class="titulo-lorem">A Razzo</h2>
+        <img id="img_pista_back" src="/assets/pista_background_mobile.png" alt="">
         <article class="text">
+            <h2 class="titulo-lorem">A Razzo</h2>
             <p>
-                Nossa plataforma contará com um sistema de acompanhamento em tempo real das corridas, no qual os usuários
+              a Nossa plataforma contará com um sistema de acompanhamento em tempo real das corridas, no qual os usuários
                 poderão fazer seus palpites sobre a ordem dos rankings e possíveis acontecimentos. Esses palpites serão
                 realizados mediante o uso de moedas, sendo a quantidade de moedas investidas proporcional ao número de
                 palpites. Ao acertarem seus palpites, os usuários serão recompensados com pontos, que lhes permitirão
@@ -53,60 +58,87 @@
     </section>
 
     <div class="container__carrossel">
-        <div class="slider">
-            <div class="slides">
-                <!-- radio botoes -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- fim radio botoes -->
-
-                <!-- imagens do slide -->
-                <div class="slide primeiro">
-                    <img src="assets/carro-azul.svg" alt="Carro Azul">
-                </div>
-                <div class="slide">
-                    <img src="assets/carro-laranja.svg" alt="Carro Laranja">
-                </div>
-                <div class="slide">
-                    <img src="assets/carro-vermelho.svg" alt="Carro Vermelho">
-                </div>
-                <div class="slide">
-                    <img src="assets/carro-azul3.svg" alt="Aleatório">
-                </div>
-                <!-- fim imagens do slide -->
-
-                <!-- navegacao aumotmatica -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-
-                </div>
-
-            </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-
-        </div>
+        <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        
+        <div class="container">
+          <h2>Our  Partners</h2>
+           <section class="customer-logos slider">
+              <div class="slide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, quas?</div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+              <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+             
+           </section>
+        </div> -->
     </div>
 
-    <section class="mapa_section">
+    <section class="next_mapa_section">
         <h4 class="titulo-corrida">Próxima Corrida:</h4>
-        <h1 class="titulo-brasil">Brasil</h1>
-        <div id="map"></div>
+        <h1 >São Paulo - Brasil</h1>
+        <div id="countdown"></div>
+        <img class="next-mapa" src="/assets/sp_anhembi.webp" alt="">
     </section>
 
+    <section class="pilotos_section">
+        <h1>Pilotos</h1>
+    <table id="table_pilotos">
+        <thead>
+            <tr>
+                <th>Piloto</th>
+                <th>Equipe</th>
+                <th>País</th>
+                <th>Pódios</th>
+                <th>Corridas</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_pilotos">
+            
+        </tbody>
+        <tfoot>
+            <tr>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="drivers_section">
+    <div class="title_drivers">
+        <h1>Três Titãs da E-strada</h1>
+        <h3>Dominando a Fórmula E com maestria e velocidade</h3>
+    </div>
+    
+    <article class="driver_article">
+        <p class="description_driver">Sérgio Câmara: O Raio Brasileiro
+            Representando com maestria a bandeira verde e amarela, Sérgio Câmara surge como um raio nas pistas da Fórmula E. O jovem piloto brasileiro, nascido em 1998, carrega consigo o talento e a garra que tanto caracterizam seus compatriotas. Sua pilotagem audaciosa e empolgante o coloca como um dos pilotos mais promissores da Fórmula E, pronto para subir ao pódio e conquistar a glória para o Brasil.</p>
+         <img class="img_driver" src="/assets/driver_brazilian.png" alt="">
+    </article>
+    <article class="driver_article">
+        <p class="description_driver">Jake Dennis: O Jovem Talento. Nascido em Great Dunmow, Reino Unido, Dennis rapidamente mostrou seu talento nas pistas. Sua abordagem agressiva e habilidade em lidar com carros elétricos o destacam como um dos jovens mais promissores da categoria. Com vitórias e pódios notáveis, Dennis continua a surpreender e conquistar fãs em todo o mundo.</p>
+         <img class="img_driver" src="/assets/driver_britanic.png" alt="">
+    </article>
+    <article class="driver_article">
+        <p class="description_driver">Stoffel Vandoorne: O Maestro Belga
+            O piloto belga, nascido em 1992, ostenta um currículo impressionante, com passagens pela Fórmula 1 e GP2. . Vandoorne já conquistou diversos pódios e vitórias, incluindo um título emocionante na temporada 2021-2022. Sua pilotagem suave e eficiente o torna um dos pilotos mais consistentes da categoria.</p>
+         <img class="img_driver" src="/assets/driver_belgican.png" alt="">
+    </article>
+   
+</section>
+
+    <!-- <div id="map"></div> -->
+
     <script src="js/script.js"></script>
+    <script src="js/carrossel_triplo.js"></script>
     <script src="js/mapa.js"></script>
     <script src="js/carrossel.js"></script>
+    <script src="js/pilotos_table.js"></script>
+    <script src="/js/change_images.js"></script>
+    <script src="/js/contador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 <!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO-->

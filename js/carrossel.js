@@ -5,7 +5,7 @@ document.getElementById('radio1').checked = true;
 
 //Chamando função com intervalo de 4 seguundos
 setInterval( function(){
-    nextImg();   
+    // nextImg();   
 }, 4000) 
 
 

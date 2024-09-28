@@ -1,0 +1,45 @@
+
+.apresentacao_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+/* .light{
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+} */
+
+.titulo-lorem {
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.apresentacao_section img{
+    width: 100%;
+    height: auto;
+}
+.text {
+    position: absolute;
+    width: 80%;
+    padding: 5%;
+    word-spacing: 5px;
+    line-height: 1.5;
+    font-weight: 200;
+    background-color: var(--cor-de-fundo);
+    border-radius: 100px 200px;
+    box-shadow: 5px 5px 10px var(--cor-de-fundo);
+    color: rgb(222, 222, 222);
+    font-size: small;
+}
+
+@media (min-width: 600px) {
+    .text {
+        width: 60%;
+        font-size: medium;
+    }
+
+
+}
