@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <title>RAZZO</title>
 </head>
 
@@ -28,7 +28,7 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="#map">Campeonato</a></li>
                 <li><a href="#">Métricas</a></li>
                 <li><a href="./pages/login.html">Login | Cadastro</a></li>
@@ -47,7 +47,8 @@
         <article class="text">
             <h2 class="titulo-lorem">A Razzo</h2>
             <p>
-              a Nossa plataforma contará com um sistema de acompanhamento em tempo real das corridas, no qual os usuários
+                a Nossa plataforma contará com um sistema de acompanhamento em tempo real das corridas, no qual os
+                usuários
                 poderão fazer seus palpites sobre a ordem dos rankings e possíveis acontecimentos. Esses palpites serão
                 realizados mediante o uso de moedas, sendo a quantidade de moedas investidas proporcional ao número de
                 palpites. Ao acertarem seus palpites, os usuários serão recompensados com pontos, que lhes permitirão
@@ -80,12 +81,15 @@
 
     <section class="next_mapa_section">
         <h4 class="titulo-corrida">Próxima Corrida:</h4>
-        <h1 >São Paulo - Brasil</h1>
+        <h1>São Paulo - Brasil</h1>
         <div id="countdown"></div>
         <img class="next-mapa" src="/assets/sp_anhembi.webp" alt="">
+        <button class="button-48" role="button"><span class="text">Acompanhar ao vivo</span></button>
     </section>
+<!-- HTML !-->
 
-    <section class="pilotos_section">
+
+    <!-- <section class="pilotos_section">
         <h1>Pilotos</h1>
     <table id="table_pilotos">
         <thead>
@@ -105,30 +109,47 @@
             </tr>
         </tfoot>
     </table>
-</section>
+</section> -->
 
-<section id="drivers_section">
-    <div class="title_drivers">
-        <h1>Três Titãs da E-strada</h1>
-        <h3>Dominando a Fórmula E com maestria e velocidade</h3>
-    </div>
-    
-    <article class="driver_article">
-        <p class="description_driver">Sérgio Câmara: O Raio Brasileiro
-            Representando com maestria a bandeira verde e amarela, Sérgio Câmara surge como um raio nas pistas da Fórmula E. O jovem piloto brasileiro, nascido em 1998, carrega consigo o talento e a garra que tanto caracterizam seus compatriotas. Sua pilotagem audaciosa e empolgante o coloca como um dos pilotos mais promissores da Fórmula E, pronto para subir ao pódio e conquistar a glória para o Brasil.</p>
-         <img class="img_driver" src="/assets/driver_brazilian.png" alt="">
-    </article>
-    <article class="driver_article">
-        <p class="description_driver">Jake Dennis: O Jovem Talento. Nascido em Great Dunmow, Reino Unido, Dennis rapidamente mostrou seu talento nas pistas. Sua abordagem agressiva e habilidade em lidar com carros elétricos o destacam como um dos jovens mais promissores da categoria. Com vitórias e pódios notáveis, Dennis continua a surpreender e conquistar fãs em todo o mundo.</p>
-         <img class="img_driver" src="/assets/driver_britanic.png" alt="">
-    </article>
-    <article class="driver_article">
-        <p class="description_driver">Stoffel Vandoorne: O Maestro Belga
-            O piloto belga, nascido em 1992, ostenta um currículo impressionante, com passagens pela Fórmula 1 e GP2. . Vandoorne já conquistou diversos pódios e vitórias, incluindo um título emocionante na temporada 2021-2022. Sua pilotagem suave e eficiente o torna um dos pilotos mais consistentes da categoria.</p>
-         <img class="img_driver" src="/assets/driver_belgican.png" alt="">
-    </article>
-   
-</section>
+    <section id="drivers_section">
+        <div class="title_drivers">
+            <h1>Três Titãs da E-strada</h1>
+            <h3>Dominando a Fórmula E com maestria e velocidade</h3>
+        </div>
+
+        <article class="driver_article">
+            <div class="description_driver">
+                <h1>Sérgio Câmara: O Raio Brasileiro</h1>
+                <p>
+                    Representando com maestria a bandeira verde e amarela, Sérgio Câmara surge como um raio nas pistas
+                    da Fórmula E. O jovem piloto brasileiro, nascido em 1998, carrega consigo o talento e a garra que
+                    tanto caracterizam seus compatriotas. Sua pilotagem audaciosa e empolgante o coloca como um dos
+                    pilotos mais promissores da Fórmula E, pronto para subir ao pódio e conquistar a glória para o
+                    Brasil.</p>
+            </div>
+
+            <img class="img_driver" src="/assets/driver_brazilian.png" alt="">
+        </article>
+        <article class="driver_article">
+            <div class="description_driver">
+                <h1>Jake Dennis: O Jovem Talento</h1>
+                <p> Nascido em Great Dunmow, Reino Unido, Dennis rapidamente mostrou seu talento nas pistas. Sua
+                    abordagem agressiva e habilidade em lidar com carros elétricos o destacam como um dos jovens mais
+                    promissores da categoria. Com vitórias e pódios notáveis, Dennis continua a surpreender e conquistar
+                    fãs em todo o mundo.</p></div>
+                <img class="img_driver" src="/assets/driver_britanic.png" alt="">
+        </article>
+        <article class="driver_article">
+            <div class="description_driver">
+                <h1>Stoffel Vandoorne: O Maestro Belga</h1>
+                <p>O piloto belga, nascido em 1992, ostenta um currículo impressionante, com passagens pela Fórmula 1 e
+                    GP2. . Vandoorne já conquistou diversos pódios e vitórias, incluindo um título emocionante na
+                    temporada 2021-2022. Sua pilotagem suave e eficiente o torna um dos pilotos mais consistentes da
+                    categoria.</p> </div>
+                <img class="img_driver" src="/assets/driver_belgican.png" alt="">
+        </article>
+
+    </section>
 
     <!-- <div id="map"></div> -->
 

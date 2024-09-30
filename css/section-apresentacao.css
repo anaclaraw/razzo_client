@@ -24,11 +24,11 @@
 .text {
     position: absolute;
     width: 80%;
-    padding: 5%;
+    padding: 1% 5%;
     word-spacing: 5px;
     line-height: 1.5;
     font-weight: 200;
-    background-color: var(--cor-de-fundo);
+    background-color:  #1b1d23a7;
     border-radius: 100px 200px;
     box-shadow: 5px 5px 10px var(--cor-de-fundo);
     color: rgb(222, 222, 222);

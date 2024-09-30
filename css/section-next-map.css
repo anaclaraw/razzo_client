@@ -1,6 +1,7 @@
 .next_mapa_section img{
     width: 90vw;
     border-radius: 2%;
+    height: 100%;
 }
 
 .next_mapa_section{
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: center;
     gap:15px;
+    margin-top: -350px;
 }
 .next_mapa_section h4{
     font-size: small;
@@ -16,6 +18,8 @@
 .next_mapa_section h1{
     font-size: medium;
 }
+
+
 
 .titulo-section{
     font-size: medium;
@@ -66,3 +70,70 @@
         font-size: medium;
     }
 }
+
+
+.button-48 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -50px;
+    
+    padding: 1.5em 2.2em;
+    padding-right: 3em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 50px;
+  }
+  
+  .button-48:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #37373768;
+    color: #000000;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+    border-radius: 50px;
+
+  }
+  
+  .button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .button-48:after {
+    background-color: #FFFFFF;
+    
+  }
+  
+  .button-48 span {
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #000000;
+    
+  }

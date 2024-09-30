@@ -1,20 +1,24 @@
-// Carrossel
+const carousel = document.querySelector('.carousel');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+let currentSlide = 0;
 
-let count = 1;
-document.getElementById('radio1').checked = true;
+nextBtn.addEventListener('click', () => {
+    const boxes = document.querySelectorAll('.box');
+    const boxWidth = boxes[0].offsetWidth + 10; // Largura da box + margem
 
-//Chamando função com intervalo de 4 seguundos
-setInterval( function(){
-    // nextImg();   
-}, 4000) 
-
-
-//Função para passagem do carrosseç
-function nextImg(){
-    count++;
-    if(count > 4){
-        count = 1;
+    if (currentSlide < boxes.length - 2) {
+        currentSlide += 1;
+        carousel.style.transform = `translateX(-${currentSlide * boxWidth}px)`;
     }
+});
 
-    document.getElementById('radio'+ count).checked = true;
-}
+prevBtn.addEventListener('click', () => {
+    const boxes = document.querySelectorAll('.box');
+    const boxWidth = boxes[0].offsetWidth + 10;
+
+    if (currentSlide > 0) {
+        currentSlide -= 1;
+        carousel.style.transform = `translateX(-${currentSlide * boxWidth}px)`;
+    }
+});
