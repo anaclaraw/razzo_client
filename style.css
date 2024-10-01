@@ -1,6 +1,7 @@
-@import url(css/style.css);
-@import url(css/header.css);
-@import url(css/footer.css);
+@import url(./css/style.css);
+@import url(./css/header.css);
+@import url(./css/footer.css);
+@import url(./css/footer.css);
 
 :root{
     --azul-claro: rgba(33, 205, 250, 1);
