@@ -23,6 +23,8 @@
 .title_drivers h3 {
     color: rgba(255, 255, 255, 0.87);
     font-size:large;
+    text-align: center;
+    padding: 1%;
 }
 
 .driver_article {
@@ -382,5 +384,6 @@
 .title_drivers h3 {
     color: rgba(255, 255, 255, 0.87);
     font-size: xx-large;
+    padding: 0;
 }
 }
