@@ -1,0 +1,96 @@
+.titulo-corrida {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.titulo-brasil {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.mapa_section {
+    padding: 5%;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#map {
+    height: 650px;
+    max-width: 90%;
+    margin: 5% auto;
+    box-shadow: 0 0px 8px 6px var(--cinza-escuro);
+    border-radius: 30px;
+    border: 2px solid var(--azul-claro);
+}
+
+
+.container {
+    background-color: #141414;
+    max-width: 90%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive columns */
+    margin: 5% auto;
+    border-radius: 20px;
+    overflow-x: scroll;
+}
+
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    /* Responsive columns */
+    grid-gap: 5px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.pos-col {
+    text-align: center;
+}
+
+.title-table {
+    padding-bottom: 20px;
+}
+
+
+
+.flag {
+    height: 15px;
+}
+
+.best-lap {
+    text-align: center;
+}
+
+.best-lap .fl {
+    color: purple;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+        /* Stack columns vertically on smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    ::-webkit-scrollbar-track {
+        background-color: #696a6a;
+    }
+
+    ::-webkit-scrollbar {
+        width: 2px;
+        background: #615757;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #2a2424;
+    }
+}

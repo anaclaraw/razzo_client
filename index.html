@@ -5,19 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="/css/section-apresentacao.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/section-next-map.css">
-    <!-- <link rel="stylesheet" href="/css/section-drivers.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
-    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>RAZZO</title>
 </head>
 
@@ -29,9 +24,9 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="#map">Campeonato</a></li>
-                <li><a href="#">Métricas</a></li>
-                <li><a href="./pages/login.html">Login | Cadastro</a></li>
+                <li><a href="/pages/campeonato.html">Campeonato</a></li>
+                <li><a href="/pages/mapa.html">Acompanhar</a></li>
+                <li><a href="/pages/login.html">Login | Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -58,8 +53,8 @@
         </article>
     </section>
 
-    <div class="container__carrossel">
-        <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <!-- <div class="container__carrossel">
+         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -76,40 +71,65 @@
               <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
              
            </section>
-        </div> -->
-    </div>
+        </div> 
+    </div> -->
 
     <section class="next_mapa_section">
         <h4 class="titulo-corrida">Próxima Corrida:</h4>
         <h1>São Paulo - Brasil</h1>
         <div id="countdown"></div>
         <img class="next-mapa" src="/assets/sp_anhembi.webp" alt="">
-        <button class="button-48" role="button"><span class="text">Acompanhar ao vivo</span></button>
+       <a href="./pages/mapa.html"> <button class="bnt-acompanhar" role="button">Acompanhar ao vivo</button></a>
     </section>
-<!-- HTML !-->
 
+    <div class="carousel-container">
+        <button id="prevBtn" class="btn-carrossel">←</button>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                
+                <div class="box">
+                    <img src="./assets/carro-laranja.svg" alt="" srcset="">
+                    <h2>História da Fórmula E</h2>
+                    <p>A Fórmula E foi inaugurada em 2014 como a primeira categoria de automobilismo totalmente elétrica.</p>
+                  </div>
+                  
+                <div class="box">
+                    <img src="./assets/carro-azul.svg" alt="" srcset="">
+                    <h2>Carros elétricos</h2>
+                    <p>A Fórmula E é a primeira categoria internacional de automobilismo exclusivamente para carros
+                        elétricos de competição.</p>
+                </div>
+                <div class="box">
+                    <img src="./assets/carro-azul3.svg" alt="" srcset="">
 
-    <!-- <section class="pilotos_section">
-        <h1>Pilotos</h1>
-    <table id="table_pilotos">
-        <thead>
-            <tr>
-                <th>Piloto</th>
-                <th>Equipe</th>
-                <th>País</th>
-                <th>Pódios</th>
-                <th>Corridas</th>
-            </tr>
-        </thead>
-        <tbody id="tbody_pilotos">
-            
-        </tbody>
-        <tfoot>
-            <tr>
-            </tr>
-        </tfoot>
-    </table>
-</section> -->
+                    <h2>Futuro Sustentável</h2>
+                    <p>A Fórmula E promove a conscientização sobre a importância da sustentabilidade e das energias renováveis.</p>
+                  </div>
+                  
+                  <div class="box">
+                    <img src="./assets/carro-vermelho.svg" alt="" srcset="">
+
+                    <h2>Tecnologia de Ponta</h2>
+                    <p>A Fórmula E é um campo de testes para novas tecnologias de veículos elétricos e baterias.</p>
+                  </div>
+                  
+                  <div class="box">
+                    <img src="./assets/carro-laranja.svg" alt="" srcset="">
+
+                    <h2>Circuitos Urbanos</h2>
+                    <p>As corridas da Fórmula E acontecem em circuitos urbanos, trazendo a emoção das corridas para o coração das cidades.</p>
+                  </div>
+                  
+                  <div class="box">
+                    <img src="./assets/carro-vermelho.svg" alt="" srcset="">
+                    <h2>Pilotos Famosos</h2>
+                    <p>Pilotos renomados como Jean-Éric Vergne e Sébastien Buemi competem na Fórmula E.</p>
+                  </div>
+                  
+            </div>
+        </div>
+        <button id="nextBtn" class="btn-carrossel">→</button>
+    </div>
 
     <section id="drivers_section">
         <div class="title_drivers">
@@ -136,8 +156,9 @@
                 <p> Nascido em Great Dunmow, Reino Unido, Dennis rapidamente mostrou seu talento nas pistas. Sua
                     abordagem agressiva e habilidade em lidar com carros elétricos o destacam como um dos jovens mais
                     promissores da categoria. Com vitórias e pódios notáveis, Dennis continua a surpreender e conquistar
-                    fãs em todo o mundo.</p></div>
-                <img class="img_driver" src="/assets/driver_britanic.png" alt="">
+                    fãs em todo o mundo.</p>
+            </div>
+            <img class="img_driver" src="/assets/driver_britanic.png" alt="">
         </article>
         <article class="driver_article">
             <div class="description_driver">
@@ -145,23 +166,50 @@
                 <p>O piloto belga, nascido em 1992, ostenta um currículo impressionante, com passagens pela Fórmula 1 e
                     GP2. . Vandoorne já conquistou diversos pódios e vitórias, incluindo um título emocionante na
                     temporada 2021-2022. Sua pilotagem suave e eficiente o torna um dos pilotos mais consistentes da
-                    categoria.</p> </div>
-                <img class="img_driver" src="/assets/driver_belgican.png" alt="">
+                    categoria.</p>
+            </div>
+            <img class="img_driver" src="/assets/driver_belgican.png" alt="">
         </article>
 
     </section>
 
-    <!-- <div id="map"></div> -->
+  
+    <footer>
+        <div class="footer-containers">
+            <div>
+                <h2>RAZZO</h2>
+                <p>Sua emoção eletrizante.</p>
+
+            </div>
+            <div class="footer-container">
+                <h4>PÁGINAS</h4>
+
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/campeonato.html">Campeonato</a></li>
+                <li><a href="/pages/mapa.html">Acompanhar</a></li>
+                <li><a href="./pages/login.html">Login | Cadastro</a></li>
+
+            </div>
+            <div class="footer-container">
+                <h4>CONTATO</h4>
+
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+
+            </div>
+
+        </div>
+        <p class="copy">&copy; Copyright 2024. Por: RAZZO </p>
+    </footer>
+
+    <script src="../js/carrossel.js"></script>
 
     <script src="js/script.js"></script>
     <script src="js/carrossel_triplo.js"></script>
-    <script src="js/mapa.js"></script>
     <script src="js/carrossel.js"></script>
     <script src="js/pilotos_table.js"></script>
     <script src="/js/change_images.js"></script>
     <script src="/js/contador.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-<!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO-->
 
 </html>

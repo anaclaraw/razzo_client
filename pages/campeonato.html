@@ -1,32 +1,267 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel Responsivo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/campeonatos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Season 11</title>
 </head>
+
 <body>
-    <div class="carousel-container">
-        <button id="prevBtn">←</button>
-        <div class="carousel-wrapper">
-            <div class="carousel">
-                <div class="box">
-                    <img src="../assets/carro-laranja.svg" alt="" srcset="">
-                    Texto 1</div>
-                <div class="box">Texto 2</div>
-                <div class="box">Texto 3</div>
-                <div class="box">Texto 4</div>
-                <div class="box">Texto 5</div>
-                <div class="box">Texto 6</div>
+    <header class="header">
+        <a href="" class="logo">Razzo</a>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./campeonato.html">Campeonato</a></li>
+                <li><a href="./mapa.html">Acompanhar</a></li>
+                <li><a href="./login.html">Login | Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="title-campeonatos">SEASON 11</h1>
+
+        <div class="grid-rounds">
+
+            <div class="race-card">
+                <img src="https://www.gov.br/planalto/pt-br/conheca-a-presidencia/acervo/simbolos-nacionais/bandeira/bandeiranacionalbrasil_.jpg"
+                    alt="Race 1">
+                <div class="race-info">
+                    <h3>São Paulo</h3>
+                    <p>Round 1</p>
+                </div>
+                <div class="square-color"></div>
+            </div>
+
+            <div class="race-card">
+                <img src="https://s4.static.brasilescola.uol.com.br/be/2022/10/bandeira-do-mexico.jpg" alt="Race 2">
+                <div class="race-info">
+                    <h3>Mexico City</h3>
+                    <p>Round 2</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="https://s3.static.brasilescola.uol.com.br/be/2022/10/bandeira-arabia-saudita1.jpg"
+                    alt="Race 3">
+                <div class="race-info">
+                    <h3>Jeddah</h3>
+                    <p>Round 3</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="https://s3.static.brasilescola.uol.com.br/be/2022/10/bandeira-arabia-saudita1.jpg"
+                    alt="Race 4">
+                <div class="race-info">
+                    <h3>Jeddah</h3>
+                    <p>Round 4</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuPy2LKBdMPjnwo31QJSVYExVGcF0dBeiiyQ&s"
+                    alt="Race 5">
+                <div class="race-info">
+                    <h3>TBC</h3>
+                    <p>Round 5</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="../assets/EUA.webp" alt="Race 6">
+                <div class="race-info">
+                    <h3>Miami</h3>
+                    <p>Round 6</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="../assets/monaco.png" alt="Race 7">
+                <div class="race-info">
+                    <h3>Monaco</h3>
+                    <p>Round 7</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="../assets/monaco.png" alt="Race 8">
+                <div class="race-info">
+                    <h3>Monaco</h3>
+                    <p>Round 8</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/japao.png" alt="Race 1">
+                <div class="race-info">
+                    <h3>Tokyo</h3>
+                    <p>Round 9</p>
+                </div>
+            </div>
+
+            <div class="race-card">
+                <img src="../assets/japao.png" alt="Race 2">
+                <div class="race-info">
+                    <h3>Tokyo</h3>
+                    <p>Round 10</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/china.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>Shanghai</h3>
+                    <p>Round 11</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/china.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>Shanghai</h3>
+                    <p>Round 12</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/" alt="Race 3">
+                <div class="race-info">
+                    <h3>Shanghai</h3>
+                    <p>Round 12</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/monaco.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>Jakarta</h3>
+                    <p>Round 13</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
+                    alt="Race 3">
+                <div class="race-info">
+                    <h3>Berlin</h3>
+                    <p>Round 14</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/alemanha.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>Berlin</h3>
+                    <p>Round 15</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/inglaterra.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>London</h3>
+                    <p>Round 16</p>
+                </div>
+            </div>
+            <div class="race-card">
+                <img src="../assets/inglaterra.png" alt="Race 3">
+                <div class="race-info">
+                    <h3>London</h3>
+                    <p>Round 17</p>
+                </div>
             </div>
         </div>
-        <button id="nextBtn">→</button>
-    </div>
+        </div>
+    </main>
 
-    <script src="../js/carrossel.js"></script>
+    <section class="patrocinadores">
+        <div class="grid-patrocinadores">
+            <h1>Together with</h1>
+
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador1.webp" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador2.webp" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador3.webp" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador4.webp" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 1 -->
+                <img src="../assets/patrocinador8.webp" alt="Image 1" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 2 -->
+                <img src="../assets/patrocinador6.webp" alt="Image 2" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador7.webp" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador8.png" alt="Image 3" class="logo2">
+            </div>
+            <div class="item2">
+                <!-- Image 3 -->
+                <img src="../assets/patrocinador10.png" alt="Image 3" class="logo2">
+            </div>
+
+    </section>
+
+
+    <section class="other-campeonatos">
+        <h1 class="title-compeonatos">Acompanhar outros campeonatos</h1>
+        <div class="grid-campeonatos">
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/6ced0184-a1ee-74d7-de1a-3a13fb4544b7?openedReason=storyListTap">
+                    <img src="../assets/campeonato1.jpeg" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
+                    <img src="../assets/campeonato2.jpeg" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
+                    <img src="../assets/campeonato3.webp" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
+                    <img src="../assets/campeonato4.webp" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
+                    <img src="../assets/campeonato5.webp" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
+                    <img src="../assets/campeonato6.webp" alt=""></a>
+            </figure>
+            <figure class="img-camp">
+                <a
+                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
+                    <img src="../assets/campeonato7.webp" alt=""></a>
+            </figure>
+        </div>
+
+    </section>
 </body>
-
 
 </html>

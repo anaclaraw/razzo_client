@@ -166,7 +166,7 @@ let numMarkers = 1; // Quantidade de pilotos
 // Inicializa os índices e os marcadores
 for (let i = 0; i < numMarkers; i++) {
     var icons = {
-        iconUrl: "/assets/porsche.png",
+        iconUrl: "/assets/driver_brazilian.png",
         iconSize: [38, 48]
     }
     var custumIcon = L.icon(icons)

@@ -7,7 +7,7 @@ nextBtn.addEventListener('click', () => {
     const boxes = document.querySelectorAll('.box');
     const boxWidth = boxes[0].offsetWidth + 10; // Largura da box + margem
 
-    if (currentSlide < boxes.length - 2) {
+    if (currentSlide < boxes.length - 3) { // Mostrar 3 itens visíveis
         currentSlide += 1;
         carousel.style.transform = `translateX(-${currentSlide * boxWidth}px)`;
     }

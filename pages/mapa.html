@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/mapa.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="/css/section-drivers.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
+    <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Ao vivo</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Razzo</a>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./campeonato.html">Campeonato</a></li>
+                <li><a href="./mapa.html">Acompanhar</a></li>
+                <li><a href="./login.html">Login | Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <div class="container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="title-table">POS</th>
+                    <th class="title-table">PILOTO</th>
+                    <th class="title-table">EQUIPA</th>
+                    <th class="title-table">JA COMEÇOU</th>
+                    <th class="title-table">O MELHOR</th>
+                    <th class="title-table">HORA</th>
+                    <th class="title-table">DIFERENÇA</th>
+                    <th class="title-table">PONTOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span style="color:green">▲</span> 1</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Oliver <br> ROWLAND <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>NISSAN <br> FORMULA E <br> TEAM</td>
+                    <td>9</td>
+                    <td>1:11:608</td>
+                    <td>54:30:572</td>
+                    <td>-</td>
+                    <td><strong>25</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 2</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Pascal <br> WEHRLEIN <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>TAG HEUER <br> PORSCHE <br> FORMULA E <br> TEAM</td>
+                    <td>4</td>
+                    <td>1:11:337 <br> FL</td>
+                    <td>54:31:627</td>
+                    <td>+ 0:01:055</td>
+                    <td><strong>18</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 3</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Mitch <br> EVANS <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>JAGUAR TCS <br> RACING</td>
+                    <td>3</td>
+                    <td>1:11:887</td>
+                    <td>54:34:354</td>
+                    <td>+ 0:03:782</td>
+                    <td><strong>15</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 4</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Sébastien <br> BUEMI <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>ENVISION <br> RACING</td>
+                    <td>17</td>
+                    <td>1:11:935</td>
+                    <td>54:34:576</td>
+                    <td>+ 0:04:004</td>
+                    <td><strong>12</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 5</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Jean-Éric <br> VERGNE <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>DS PENSKE</td>
+                    <td>6</td>
+                    <td>1:12:121</td>
+                    <td>54:35:377</td>
+                    <td>+ 0:04:805</td>
+                    <td><strong>10</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 6</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Nico <br> MÜLLER <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>ABT CUPRA FORMULA E TEAM</td>
+                    <td>16</td>
+                    <td>1:12:088</td>
+                    <td>54:35:774</td>
+                    <td>+ 0:05:202</td>
+                    <td><strong>8</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:red">▼</span> 7</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Robin <br> FRIJNS <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>ENVISION RACING</td>
+                    <td>5</td>
+                    <td>1:12:087</td>
+                    <td>54:36:154</td>
+                    <td>+ 0:05:582</td>
+                    <td><strong>6</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 8</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Stoffel <br> VANDOORNE <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>DS PENSKE</td>
+                    <td>7</td>
+                    <td>1:11:861</td>
+                    <td>54:36:676</td>
+                    <td>+ 0:06:104</td>
+                    <td><strong>4</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 9</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Lucas <br> DI GRASSI <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>ABT CUPRA FORMULA E TEAM</td>
+                    <td>14</td>
+                    <td>1:11:971</td>
+                    <td>54:37:239</td>
+                    <td>+ 0:06:667</td>
+                    <td><strong>2</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:green">▲</span> 10</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Jake <br> HUGHES <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>NEOM MCLAREN FORMULA E TEAM</td>
+                    <td>15</td>
+                    <td>1:11:331</td>
+                    <td>54:37:679</td>
+                    <td>+ 0:07:107</td>
+                    <td><strong>2</strong></td>
+                </tr>
+                <tr>
+                    <td><span style="color:red">▼</span> 11</td>
+                    <td><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                        Sérgio <br> SETTE CÂMARA <br> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    </td>
+                    <td>ERT FORMULA E TEAM</td>
+                    <td>18</td>
+                    <td>1:11:886</td>
+                    <td>54:38:151</td>
+                    <td>+ 0:07:579</td>
+                    <td><strong>0</strong></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <div id="map"></div>
+
+
+    <script src="../js/mapa.js"></script>
+    <script src="../js/contador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+<!-- <script src="js/carScroll.js"></script> TESTE PARA CARRO DO SCROLL, AINDA NÂO FUNCIONANDO-->
+
+</html>
