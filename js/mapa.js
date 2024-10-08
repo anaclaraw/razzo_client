@@ -161,12 +161,12 @@ array = [
 
 let indices = []; // Armazena o índice de cada piloto
 let markers = []; // Armazena as posiçoes dos pilotos
-let numMarkers = 1; // Quantidade de pilotos
-
+let numMarkers = 5; // Quantidade de pilotos
+let lista_pilotos = ['/assets/driver_brazilian.png','/assets/driver_belgican.png','/assets/driver_britanic.png','/assets/driver_cassidy.png','/assets/driver_pascal.png']
 // Inicializa os índices e os marcadores
 for (let i = 0; i < numMarkers; i++) {
     var icons = {
-        iconUrl: "/assets/driver_brazilian.png",
+        iconUrl: lista_pilotos[i],
         iconSize: [38, 48]
     }
     var custumIcon = L.icon(icons)
@@ -175,7 +175,8 @@ for (let i = 0; i < numMarkers; i++) {
         icon: custumIcon,
     }
 
-    indices.push(i); // Cria a lista de indices
+    let startingIndex = i * 2 ; // Define uma distância inicial entre os pilotos
+    indices.push(startingIndex);
     let marker = L.marker(array[i], makeroptions).addTo(map); // Adiciona o marcador na primeira posição
     markers.push(marker);
 }
@@ -190,8 +191,93 @@ async function moveMarkers() {
             indices[i] = 0; // Reinicia o índice se chegar ao fim do array
         }
     }
-    setTimeout(moveMarkers, 100); // Cria o lopping infinito, chamando a função de movimento novamente após 100ms
+    setTimeout(moveMarkers, 50); // Cria o lopping infinito, chamando a função de movimento novamente após 100ms
 }
 
 
 moveMarkers(); // Inicia o movimento dos marcadores
+
+function realizarCompra() {
+    // Listas de variações
+    const descricoes = [
+        "Aposta realizada com sucesso! Boa sorte!",
+        "Você comprou uma nova aposta! Vamos ver o resultado.",
+        "Aposta confirmada! Agora é só torcer!",
+        "Compra concluída! O jogo está rolando!"
+    ];
+
+    const coresDeFundo = [
+        "#ffcccb", // Vermelho claro
+        "#d4edda", // Verde claro
+        "#cce5ff", // Azul claro
+        "#fff3cd"  // Amarelo claro
+    ];
+
+    const valores = [
+        "Custa 20 moedas | Ganha 100 moedas",
+        "Custa 15 moedas | Ganha 75 moedas",
+        "Custa 30 moedas | Ganha 150 moedas",
+        "Custa 25 moedas | Ganha 125 moedas"
+    ];
+
+    // Escolher valores aleatórios das listas
+    const descricaoAleatoria = descricoes[Math.floor(Math.random() * descricoes.length)];
+    const corAleatoria = coresDeFundo[Math.floor(Math.random() * coresDeFundo.length)];
+    const valorAleatorio = valores[Math.floor(Math.random() * valores.length)];
+
+    // Alterar descrição
+    document.getElementById("descricao").innerHTML = descricaoAleatoria;
+    
+    // Alterar cor de fundo do formulário
+    document.getElementById("apostaForm").style.backgroundColor = corAleatoria;
+
+    // Alterar valor
+    document.getElementById("valor").innerHTML = valorAleatorio;
+}
+ // Lista dos pilotos
+ const pilotos = [
+    "Jake Dennis",
+    "Nick Cassidy",
+    "Mitch Evans",
+    "Pascal Wehrlein",
+    "Jean-Éric Vergne",
+    "Sacha Fenestraz",
+    "Antonio Félix da Costa",
+    "René Rast",
+    "Stoffel Vandoorne",
+    "Sérgio Sette Câmara"
+];
+
+// Função para embaralhar a lista de pilotos
+function embaralharArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Troca as posições
+    }
+    return array;
+}
+
+// Função para atualizar o ranking
+function atualizarRanking() {
+    // Embaralha os pilotos
+    const pilotosEmbaralhados = embaralharArray([...pilotos]);
+
+    // Seleciona o elemento da lista de ranking
+    const ranking = document.getElementById("ranking");
+
+    // Atualiza a lista com os pilotos embaralhados
+    ranking.innerHTML = "";
+    j = 1
+    pilotosEmbaralhados.forEach(piloto => {
+        const li = document.createElement("li");
+        li.textContent = j + " | " + piloto;
+        ranking.appendChild(li);
+        j++
+    });
+}
+
+// Atualiza o ranking a cada 6 segundos
+setInterval(atualizarRanking, 6000);
+
+// Atualiza o ranking na inicialização
+atualizarRanking();
