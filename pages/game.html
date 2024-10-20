@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <title>RAZZO</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Razzo</a>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="./pages/campeonato.html">Campeonato</a></li>
+                <li><a href="./pages/mapa.html">Acompanhar</a></li>
+                <li><a href="./pages/login.html">Login | Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="row mb-5 text-center mt-5">
+    </div>
+
+    <div class="row mb-3 text-center">
+        <div class="col-md-8 themed-grid-col">
+            <div class="pb-3">
+                <h2>Sua Escalação
+            </div>
+            <div class="row">
+                <div class="col-md-4 themed-grid-col" id="moedas">
+                    <h3 id="moedas-restantes">$1000,00</h3>
+                    <p>Moedas restantes</p>
+                </div>
+                <div class="col-md-4 themed-grid-col" id="pilotos">
+                    <h3 id="pilotos-selecionados">0/4</h3>
+                    <p>Pilotos Selecionados</p>
+                </div>
+                <div class="col-md-4 themed-grid-col" id="equipes">
+                    <h3 id="equipes-selecionadas">0/2</h3>
+                    <p>Time Selecionado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 themed-grid-col"><button class="btn btn-primary" type="submit">Salvar Escalação</button>
+        </div>
+    </div>
+
+    <div class="row mb-3 text-center">
+        <div class="col-md-1 themed-grid-col">
+        </div>
+        <div id="cardContainer" class="col-md-4 themed-grid-col">
+        </div>
+        <div id="cardContainer2" class="col-md-4 themed-grid-col">
+        </div>
+        <div class="col-md-3 themed-grid-col">
+            <div class="card m-3">
+                <div class="card-header">
+                    <h2>Pilotos</h2>
+                </div>
+                <div class="rolavel">
+
+                    <ol class="list-group">
+                        <li id="createCardBtn-Dennis"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Jake Dennis</div>
+                                Andretti
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Muller"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Nico Muller</div>
+                                Andretti
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Vergne"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Jean-Eric Vergne</div>
+                                DS Penske
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Gunther"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Maximilian Gunther</div>
+                                DS Penske
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Frijns"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Robin Frijns</div>
+                                Envision
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Buemi"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Sebastien Buemi</div>
+                                Envision
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Evans"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Mitch Evans</div>
+                                Jaguar
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Cassidy"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Nick Cassidy</div>
+                                Jaguar
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-TBC"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">TBC</div>
+                                Kiro
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-TBC2"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">TBC2</div>
+                                Kiro
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Di_Grassi"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Lucas Di Grassi</div>
+                                Lola
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Maloney"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Zane Maloney</div>
+                                Lola
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Montara"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Edoardo Montara</div>
+                                Mahindra
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-De_Vries"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Nyck De Vries</div>
+                                Mahindra
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Hughes"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Jake Hughes</div>
+                                Maserati
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Vandoorne"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Stoffel Vandoorne</div>
+                                Maserati
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Bird"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Sam Bird</div>
+                                Mclaren
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Barnard"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Taylor Barnard</div>
+                                Mclaren
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Rowland"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Oliver Rowland</div>
+                                Nissan
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Nato"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Norman Nato</div>
+                                Nissan
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Wehrlein"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Pascal Wehrlein</div>
+                                Porsche
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Da_Costa"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Antonio Felix da Costa</div>
+                                Porsche
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+
+            <div class="card m-3">
+                <div class="card-header">
+                    <h2>Equipes</h2>
+                </div>
+                <div class="rolavel">
+                    <ol class="list-group">
+                        <li id="createCardBtn-Andretti"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Andretti Formula E</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$20</span>
+                        </li>
+                        <li id="createCardBtn-Ds"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">DS Penske</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Envision"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 roundeds">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Envision Racing</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$30</span>
+                        </li>
+                        <li id="createCardBtn-Jaguar"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Jaguar TCS Racing</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$40</span>
+                        </li>
+                        <li id="createCardBtn-Kiro"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Kiro Race Co</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Lola"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Lola Yamaha Abt Formula E Team</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$30</span>
+                        </li>
+                        <li id="createCardBtn-Mahindra"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Mahindra Racing</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$20</span>
+                        </li>
+                        <li id="createCardBtn-Maserati"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Maserati MSG Racing</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Mclaren"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Neom Mclaren Formula E Team</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$30</span>
+                        </li>
+                        <li id="createCardBtn-Nissan"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Nissan Formula E Team</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$10</span>
+                        </li>
+                        <li id="createCardBtn-Porsche"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-1 rounded">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Tag Heuer Porsche Formula E Team</div>
+                            </div>
+                            <span class="badge text-bg-primary rounded-pill">$30</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-containers">
+            <div>
+                <h2>RAZZO</h2>
+                <p>Sua emoção eletrizante.</p>
+
+            </div>
+            <div class="footer-container">
+                <h4>PÁGINAS</h4>
+
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/campeonato.html">Campeonato</a></li>
+                <li><a href="./pages/mapa.html">Acompanhar</a></li>
+                <li><a href="./pages/login.html">Login | Cadastro</a></li>
+
+            </div>
+            <div class="footer-container">
+                <h4>CONTATO</h4>
+
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+
+            </div>
+
+        </div>
+        <p class="copy">&copy; Copyright 2024. Por: RAZZO </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/game.js"></script>
+</body>
+
+</html>
