@@ -1,9 +1,4 @@
 
-
-
-
-
-
 // Definição dos dados dos campeonatos
 const campeonatos = {
     formulaE: {
@@ -27,7 +22,7 @@ const campeonatos = {
             { city: "Berlin", round: 15, img: "../assets/alemanha.png" },
             { city: "London", round: 16, img: "../assets/inglaterra.png" },
             { city: "London", round: 17, img: "../assets/inglaterra.png" }
-            // Adicione mais rounds conforme necessário
+           
         ],
         patrocinadores: [
             { src: "../assets/patrocinador1.webp", alt: "Patrocinador" },
@@ -38,12 +33,11 @@ const campeonatos = {
             { src: "../assets/patrocinador7.webp", alt: "Patrocinador" },
             { src: "../assets/patrocinador8.png", alt: "Patrocinador" },
             { src: "../assets/patrocinador10.png", alt: "Patrocinador" }
-            // Adicione mais patrocinadores conforme necessário
         ],
         outrosCampeonatos: [
             { link: "https://www.fiaformulae.com/pt-br/calendar#stories/6ced0184", image: "../assets/campeonato1.jpeg", alt: "Campeonato 1" },
             { link: "https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a", image: "../assets/campeonato2.jpeg", alt: "Campeonato 2" }
-            // Adicione mais campeonatos conforme necessário
+           
         ]
     },
     formula1: {
@@ -114,12 +108,16 @@ const campeonatos = {
             { city: "Rally GB", round: 5, img: "../assets/inglaterra.png" }
         ],
         patrocinadores: [
-            { src: "../assets/rally_patrocinador1.webp", alt: "Rally Patrocinador 1" },
-            { src: "../assets/rally_patrocinador2.webp", alt: "Rally Patrocinador 2" }
+            { src: "https://images.wrc.com/images/footer/footerPirelli.png", alt: "Rally Patrocinador 1" },
+            { src: "https://images.wrc.com/images/footer/footerWolf.png", alt: "Rally Patrocinador 1" },
+            { src: "https://images.wrc.com/images/footer/footerAsahi.png", alt: "Rally Patrocinador 1" },
+            { src: "https://images.wrc.com/images/footer/footerFanatec.png", alt: "Rally Patrocinador 1" },
+            { src: "https://images.wrc.com/images/footer/footerCastore2.png", alt: "Rally Patrocinador 2" }
         ],
         outrosCampeonatos: [
-            { link: "https://www.rally.com/calendar#stories/1", image: "../assets/rally_campeonato1.jpeg", alt: "Rally Campeonato 1" },
-            { link: "https://www.rally.com/calendar#stories/2", image: "../assets/rally_campeonato2.jpeg", alt: "Rally Campeonato 2" }
+            { link: "https://www.wrc.com/c/event/228Z_WRC-Tet-Rally-Latvia", image: "https://wrc.enhance.diagnal.com/resources/images/eyJrZXkiOiJodHRwczovL2VuaGFuY2Utc3RvcmFnZS1zdGFjay1wcm9kLXdyY21lZGlhZmlsZXN0b3JhZ2UtZzN6MmhnM3Vyd2ZmLnMzLmFtYXpvbmF3cy5jb20vNjIxOGM1MDctM2MxZS00NTdjLTliMDYtOWNmYzFkNDdhMGI1X2JpbGRzY2hpcm1mb3RvLTIwMjQtMDctMTktdW0tMDgucG5nIiwidGltZXN0YW1wIjoiMjAyNC0wNy0xOVQwNzowMDo1MS41NDFaIiwiZWRpdHMiOnsiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjoxMjY3LCJoZWlnaHQiOjcxMn0sInJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjE4MH0sImpwZWciOnsicXVhbGl0eSI6MTAwfX19/6218c507-3c1e-457c-9b06-9cfc1d47a0b5_bildschirmfoto-2024-07-19-um-08.png", alt: "Rally Campeonato 1" },
+            { link: "https://www.wrc.com/c/event/228Z_WRC-Tet-Rally-Latvia", image: "https://wrc.enhance.diagnal.com/resources/images/eyJrZXkiOiJodHRwczovL2VuaGFuY2Utc3RvcmFnZS1zdGFjay1wcm9kLXdyY21lZGlhZmlsZXN0b3JhZ2UtZzN6MmhnM3Vyd2ZmLnMzLmFtYXpvbmF3cy5jb20vNjIxOGM1MDctM2MxZS00NTdjLTliMDYtOWNmYzFkNDdhMGI1X2JpbGRzY2hpcm1mb3RvLTIwMjQtMDctMTktdW0tMDgucG5nIiwidGltZXN0YW1wIjoiMjAyNC0wNy0xOVQwNzowMDo1MS41NDFaIiwiZWRpdHMiOnsiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjoxMjY3LCJoZWlnaHQiOjcxMn0sInJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjE4MH0sImpwZWciOnsicXVhbGl0eSI6MTAwfX19/6218c507-3c1e-457c-9b06-9cfc1d47a0b5_bildschirmfoto-2024-07-19-um-08.png", alt: "Rally Campeonato 1" },
+            { link: "https://wrc.enhance.diagnal.com/resources/images/eyJrZXkiOiJodHRwczovL2VuaGFuY2Utc3RvcmFnZS1zdGFjay1wcm9kLXdyY21lZGlhZmlsZXN0b3JhZ2UtZzN6MmhnM3Vyd2ZmLnMzLmFtYXpvbmF3cy5jb20vZDQ1OGQ0MGItNGY5OC00NmM0LWIxMWYtYTYyN2E3Nzc1ODUwX3dyY2dyZWVjZTIwMjQta29waWUuanBnIiwidGltZXN0YW1wIjoiMjAyNC0wMS0zMVQwOToxNzozOC4yNTZaIiwiZWRpdHMiOnsiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjoxOTEwLCJoZWlnaHQiOjEwODB9LCJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjoxODB9LCJqcGVnIjp7InF1YWxpdHkiOjEwMH19fQ==/d458d40b-4f98-46c4-b11f-a627a7775850_wrcgreece2024-kopie.jpg", image: "https://wrc.enhance.diagnal.com/resources/images/eyJrZXkiOiJodHRwczovL2VuaGFuY2Utc3RvcmFnZS1zdGFjay1wcm9kLXdyY21lZGlhZmlsZXN0b3JhZ2UtZzN6MmhnM3Vyd2ZmLnMzLmFtYXpvbmF3cy5jb20vZDQ1OGQ0MGItNGY5OC00NmM0LWIxMWYtYTYyN2E3Nzc1ODUwX3dyY2dyZWVjZTIwMjQta29waWUuanBnIiwidGltZXN0YW1wIjoiMjAyNC0wMS0zMVQwOToxNzozOC4yNTZaIiwiZWRpdHMiOnsiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjoxOTEwLCJoZWlnaHQiOjEwODB9LCJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjoxODB9LCJqcGVnIjp7InF1YWxpdHkiOjEwMH19fQ==/d458d40b-4f98-46c4-b11f-a627a7775850_wrcgreece2024-kopie.jpg", alt: "Rally Campeonato 1" },
         ]
     },
     wec: {
@@ -133,24 +131,26 @@ const campeonatos = {
             { city: "Sebring", round: 5, img: "../assets/EUA.webp" }
         ],
         patrocinadores: [
-            { src: "../assets/wec_patrocinador1.webp", alt: "WEC Patrocinador 1" },
-            { src: "../assets/wec_patrocinador2.webp", alt: "WEC Patrocinador 2" }
+            { src: "https://www.fiawec.com/media/cache/easy_thumb/assets/fileuploads/64/35/64358c5ce4571.png", alt: "WEC Patrocinador 1" },
+            { src: "https://team.fiawec.com/assets/fileuploads/65/68/65689032e71ec.png", alt: "WEC Patrocinador 1" },
+            { src: "https://www.fiawec.com/media/cache/easy_thumb/assets/fileuploads/65/e8/65e82b35a298b.png", alt: "WEC Patrocinador 1" },
+            { src: "https://www.fiawec.com/media/cache/easy_thumb/assets/fileuploads/65/e8/65e82ca61b8b1.png", alt: "WEC Patrocinador 2" }
         ],
         outrosCampeonatos: [
-            { link: "https://www.wec.com/calendar#stories/1", image: "../assets/wec_campeonato1.jpeg", alt: "WEC Campeonato 1" },
-            { link: "https://www.wec.com/calendar#stories/2", image: "../assets/wec_campeonato2.jpeg", alt: "WEC Campeonato 2" }
+            { link: "https://www.fiawec.com/en/calendar/80", image: "https://storage.googleapis.com/fiawec-prod/assets/ressources/2025-CALENDAR_LANDSCAPE.jpg", alt: "WEC Campeonato 1" },
+            { link: "https://www.fiawec.com/en/race/show/4863", image: "https://storage.googleapis.com/ecm-prod/assets/1/course/4863/wec-spa-a4-landscape_6662f6.jpeg", alt: "WEC Campeonato 2" }
         ]
     },
 
-    // Adicione mais campeonatos conforme necessário
+   
 };
 
 // Função para renderizar os dados do campeonato
 function renderCampeonato(campeonato) {
-    // Título do campeonato
-
+    // Atribuindo titulo do campeonato
     titulo = document.getElementById("title-campeonato")
     titulo.textContent = campeonato.title.toUpperCase();
+
     // Seleciona todos os elementos com a classe "title-campeonato"
     const titulosCampeonatos = document.querySelectorAll('.title-campeonato');
 
@@ -206,13 +206,9 @@ function renderCampeonato(campeonato) {
         outrosCampeonatosContainer.appendChild(campElement);
     });
 
-    // Exibir o container do campeonato
     document.getElementById("container-campeonato").classList.remove("hidden");
 }
 
-// Chamada da função para renderizar um campeonato específico
-// Isso pode ser feito com base na escolha do usuário, por exemplo:
- // Pode ser alterado para `campeonatos.formula1`, etc.
 
 
 
@@ -222,11 +218,7 @@ function renderCampeonato(campeonato) {
 
 
 
-//adionar display grid no grid-rounds-formulae
-const toggleBtn = document.getElementById('btn-toggle-formulae');
-// toggleBtn.addEventListener('click', () => {
-//     FormulaEContainer.classList.toggle('hidden');
-// });
+
 renderCampeonato(campeonatos.formulaE)
 function ToggleCampeonato(campeonatoX){
     renderCampeonato(campeonatos[campeonatoX]);
