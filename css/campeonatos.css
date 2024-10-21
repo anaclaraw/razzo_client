@@ -4,16 +4,25 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    transition: 2s all; 
 }
-
-.container {
+.hidden{
+    display: none;
+    transition: 2s all; 
+    
+}
+.container-campeonato {
     color: #fff;
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
+    transition: 2s all; 
     
 }
-.container h1{
+#title-page-campeonatos{
+    margin-top: 5%;
+}
+.container-campeonato h1{
     
     color: rgba(117, 221, 247, 0.993);
     font-size: 44px;
@@ -26,13 +35,14 @@ h1 {
 
 .grid-rounds {
     z-index: 1;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     background-color: #ffffffef;
     padding: 30px;
     border-radius: 30px;
     box-shadow: 4px 4px 5px rgba(239, 239, 239, 0.108);
+    display: grid; 
+    transition: 2s all; 
 }
 
 .race-card {
@@ -116,7 +126,7 @@ h1 {
 }
 
 .patrocinadores {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -151,15 +161,15 @@ h1 {
 
 .other-campeonatos {
     max-width: 95%;
-    /* Set a maximum width for the container */
-    margin: 5% auto;
-    /* Center the container */
+    /* Set a maximum width for the container-campeonato */
+    margin: 0 auto 5% auto;
+    /* Center the container-campeonato */
     padding: 20px;
 }
 
 .grid-campeonatos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
     /* Create a responsive grid with a maximum of 5 columns */
     /* Add a gap between grid items */
@@ -167,7 +177,7 @@ h1 {
 
 .img-camp {
     display: flex;
-    /* Make the figure a flex container to center the image */
+    /* Make the figure a flex container-campeonato to center the image */
     justify-content: center;
     /* Center the image horizontally */
     align-items: center;
@@ -193,8 +203,36 @@ h1 {
     padding-top: 3%;
 }
 
+.campeonato-options {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.visibily-campeonatos{
+      margin: 20px auto;
+    text-align: center;
+  }
+
+.visibily-campeonatos img{
+    max-height: 50px;
+    width: auto;
+}
+footer{
+    margin-top: 30vh;
+
+}
+.link-page-mapa{
+    padding: 5px;
+    border-radius: 20px;
+    margin: auto;
+    margin: 90px 0;
+}
 /* Media query to adjust the grid template columns for smaller screens */
 @media (max-width: 768px) {
+   
     .grid-campeonatos {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
@@ -205,4 +243,47 @@ h1 {
     .grid-campeonatos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+}
+
+
+
+/* CSS */
+.btn-campeonato {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(55, 188, 229);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-campeonato:after {
+  content: "";
+  background-color: #4f5e64;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btn-campeonato:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .btn-campeonato {
+    padding: 13px 50px 13px;
+  }
 }
