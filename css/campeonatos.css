@@ -162,7 +162,7 @@ h1 {
 .other-campeonatos {
     max-width: 95%;
     /* Set a maximum width for the container-campeonato */
-    margin: 5% auto;
+    margin: 0 auto 5% auto;
     /* Center the container-campeonato */
     padding: 20px;
 }
@@ -217,7 +217,18 @@ h1 {
   }
 
 .visibily-campeonatos img{
-    width: 90%;
+    max-height: 50px;
+    width: auto;
+}
+footer{
+    margin-top: 30vh;
+
+}
+.link-page-mapa{
+    padding: 5px;
+    border-radius: 20px;
+    margin: auto;
+    margin: 90px 0;
 }
 /* Media query to adjust the grid template columns for smaller screens */
 @media (max-width: 768px) {

@@ -163,7 +163,7 @@ function renderCampeonato(campeonato) {
     // Rounds
     const roundsContainer = document.getElementById("grid-rounds");
     roundsContainer.innerHTML = ""; // Limpa o conteúdo existente
-    campeonato.rounds.forEach(round => {
+    campeonato.rounds.forEach((round,index) => {
         const raceCard = document.createElement('div');
         raceCard.classList.add('race-card'); // Adicionando a classe 'hidden'
         raceCard.style.borderColor = campeonato.color
@@ -176,7 +176,13 @@ function renderCampeonato(campeonato) {
                 <p>Round ${round.round}</p>
             </div>
         `;
-
+        if (index === 0) {
+            const linkPageMapa = document.createElement('a');
+            linkPageMapa.textContent = 'Acompanhar ao Vivo';
+            linkPageMapa.href = './mapa.html';
+            linkPageMapa.classList.add('link-page-mapa')
+            raceCard.appendChild(linkPageMapa);
+        }
         roundsContainer.appendChild(raceCard);
     });
 
@@ -221,7 +227,7 @@ const toggleBtn = document.getElementById('btn-toggle-formulae');
 // toggleBtn.addEventListener('click', () => {
 //     FormulaEContainer.classList.toggle('hidden');
 // });
-
+renderCampeonato(campeonatos.formulaE)
 function ToggleCampeonato(campeonatoX){
     renderCampeonato(campeonatos[campeonatoX]);
 }
