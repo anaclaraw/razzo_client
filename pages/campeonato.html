@@ -29,241 +29,56 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <h1 class="title-campeonatos">SEASON 11</h1>
+    <h1 id="title-page-campeonatos">ACOMPANHE</h1>
 
-        <div class="grid-rounds">
+    <section class="campeonato-options">
+        <article class="visibily-campeonatos" id="btn-toggle-formulae" onclick="ToggleCampeonato('formulaE')">
+            <img src="../assets/EPrix_logo.svg" />
+            <p>Corridas de carros elétricos, focadas em cidades e sustentabilidade.</p>
+                <button class="btn-campeonato">Acompanhar</button>
+        </article>
+        <article class="visibily-campeonatos" id="btn-toggle-formulae" onclick="ToggleCampeonato('formula1')">
+            <img src="../assets/EPrix_logo.svg" />
+            <p>A categoria máxima do automobilismo, com carros de alta performance e circuitos tradicionais.</p>
+                <button class="btn-campeonato">Acompanhar</button>
+                
+        </article>
+        <article class="visibily-campeonatos" id="btn-toggle-formulae" onclick="ToggleCampeonato('nascar')">
+            <img src="../assets/EPrix_logo.svg" />
+            <p>Principal categoria de corridas de stock car nos Estados Unidos, com provas em óvalos e circuitos mistos. 🇺🇸</p>
+                <button class="btn-campeonato">Acompanhar</button>
+                
+        </article>
+        <article class="visibily-campeonatos" id="btn-toggle-formulae" onclick="ToggleCampeonato('rally')">
+            <img src="../assets/EPrix_logo.svg" />
+            <p>Competição automobilística em estradas de terra ou asfalto, com diferentes tipos de terreno e condições climáticas.</p>
+                <button class="btn-campeonato">Acompanhar</button>
+                
+        </article>
+        <article class="visibily-campeonatos" id="btn-toggle-formulae" onclick="ToggleCampeonato('wec')">
+            <img src="../assets/EPrix_logo.svg" />
+            <p>Corridas de longa duração, com carros de diferentes categorias, em circuitos tradicionais e circuitos de rua. </p>
+                <button class="btn-campeonato">Acompanhar</button>
+                
+        </article>
+    </section>
 
-            <div class="race-card">
-                <img src="https://www.gov.br/planalto/pt-br/conheca-a-presidencia/acervo/simbolos-nacionais/bandeira/bandeiranacionalbrasil_.jpg"
-                    alt="Race 1">
-                <div class="race-info">
-                    <h3>São Paulo</h3>
-                    <p>Round 1</p>
-                </div>
-                <div class="square-color"></div>
-            </div>
+    <section class="container-campeonato hidden" id="container-campeonato">
+        <h1 class="title-campeonato" id="title-campeonato"></h1>
+        <div class="grid-rounds" id="grid-rounds"></div>
 
-            <div class="race-card">
-                <img src="https://s4.static.brasilescola.uol.com.br/be/2022/10/bandeira-do-mexico.jpg" alt="Race 2">
-                <div class="race-info">
-                    <h3>Mexico City</h3>
-                    <p>Round 2</p>
-                </div>
-            </div>
+        <section class="patrocinadores">
+            <h1 class="title-campeonato">Together with</h1>
+            <div class="grid-patrocinadores" id="grid-patrocinadores"></div>
+        </section>
 
-            <div class="race-card">
-                <img src="https://s3.static.brasilescola.uol.com.br/be/2022/10/bandeira-arabia-saudita1.jpg"
-                    alt="Race 3">
-                <div class="race-info">
-                    <h3>Jeddah</h3>
-                    <p>Round 3</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="https://s3.static.brasilescola.uol.com.br/be/2022/10/bandeira-arabia-saudita1.jpg"
-                    alt="Race 4">
-                <div class="race-info">
-                    <h3>Jeddah</h3>
-                    <p>Round 4</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuPy2LKBdMPjnwo31QJSVYExVGcF0dBeiiyQ&s"
-                    alt="Race 5">
-                <div class="race-info">
-                    <h3>TBC</h3>
-                    <p>Round 5</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="../assets/EUA.webp" alt="Race 6">
-                <div class="race-info">
-                    <h3>Miami</h3>
-                    <p>Round 6</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="../assets/monaco.png" alt="Race 7">
-                <div class="race-info">
-                    <h3>Monaco</h3>
-                    <p>Round 7</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="../assets/monaco.png" alt="Race 8">
-                <div class="race-info">
-                    <h3>Monaco</h3>
-                    <p>Round 8</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/japao.png" alt="Race 1">
-                <div class="race-info">
-                    <h3>Tokyo</h3>
-                    <p>Round 9</p>
-                </div>
-            </div>
-
-            <div class="race-card">
-                <img src="../assets/japao.png" alt="Race 2">
-                <div class="race-info">
-                    <h3>Tokyo</h3>
-                    <p>Round 10</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/china.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>Shanghai</h3>
-                    <p>Round 11</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/china.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>Shanghai</h3>
-                    <p>Round 12</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/" alt="Race 3">
-                <div class="race-info">
-                    <h3>Shanghai</h3>
-                    <p>Round 12</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/monaco.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>Jakarta</h3>
-                    <p>Round 13</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png"
-                    alt="Race 3">
-                <div class="race-info">
-                    <h3>Berlin</h3>
-                    <p>Round 14</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/alemanha.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>Berlin</h3>
-                    <p>Round 15</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/inglaterra.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>London</h3>
-                    <p>Round 16</p>
-                </div>
-            </div>
-            <div class="race-card">
-                <img src="../assets/inglaterra.png" alt="Race 3">
-                <div class="race-info">
-                    <h3>London</h3>
-                    <p>Round 17</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </main>
-
-    <section class="patrocinadores">
-        <div class="grid-patrocinadores">
-            <h1>Together with</h1>
-
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador1.webp" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador2.webp" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador3.webp" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador4.webp" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 1 -->
-                <img src="../assets/patrocinador8.webp" alt="Image 1" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 2 -->
-                <img src="../assets/patrocinador6.webp" alt="Image 2" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador7.webp" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador8.png" alt="Image 3" class="logo2">
-            </div>
-            <div class="item2">
-                <!-- Image 3 -->
-                <img src="../assets/patrocinador10.png" alt="Image 3" class="logo2">
-            </div>
-
+        <section class="other-campeonatos">
+            <h1 class="title-campeonato">Acompanhar outros campeonatos</h1>
+            <div class="grid-campeonatos" id="grid-campeonatos"></div>
+        </section>
     </section>
 
 
-    <section class="other-campeonatos">
-        <h1 class="title-compeonatos">Acompanhar outros campeonatos</h1>
-        <div class="grid-campeonatos">
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/6ced0184-a1ee-74d7-de1a-3a13fb4544b7?openedReason=storyListTap">
-                    <img src="../assets/campeonato1.jpeg" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
-                    <img src="../assets/campeonato2.jpeg" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
-                    <img src="../assets/campeonato3.webp" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
-                    <img src="../assets/campeonato4.webp" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
-                    <img src="../assets/campeonato5.webp" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/d8b87d9a-d799-726d-6cf5-3a13e8964d35?openedReason=storyListTap">
-                    <img src="../assets/campeonato6.webp" alt=""></a>
-            </figure>
-            <figure class="img-camp">
-                <a
-                    href="https://www.fiaformulae.com/pt-br/calendar#stories/e1ff5e91-82b8-8bf4-3ac1-3a12747ea054?openedReason=storyListTap">
-                    <img src="../assets/campeonato7.webp" alt=""></a>
-            </figure>
-        </div>
-
-    </section>
-    
     <footer>
         <div class="footer-containers">
             <div>
@@ -292,5 +107,6 @@
         <p class="copy">&copy; Copyright 2024. Por: RAZZO </p>
     </footer>
 </body>
+<script src="../js/campeonato.js"></script>
 
 </html>
