@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(rgba(2, 56, 89, 0.65), #1B1D23), url('../assets/fundorazzoo.jpg') no-repeat center center / cover;
-    padding: 20px;
+    padding: 20px 0;
     box-shadow: 0 20px 40px #1B1D23;
 }
 
@@ -22,7 +22,10 @@ body {
     border-radius: 5px;
 }
 .list-group-item{
-    background-color: black;
+    background-color: rgb(22, 22, 22);
+    border-color: #636363;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.596);
+
 }
 
 .ms-2{
@@ -33,12 +36,15 @@ body {
     width: 18rem;
     margin: 10px;
     border: 2px solid blue;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-bottom-right-radius:50px ;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.941);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.218);
+    margin: auto;
 }
 
 .andretti{
@@ -103,6 +109,7 @@ body {
     object-fit: cover;
     margin: 15px;
     border-radius: 6px;
+    
 }
 .driver-card .card-body {
     position: relative;
@@ -119,3 +126,9 @@ body {
 .pr-20{
     padding-right: 20px;
 }
+
+@media screen and (max-width:990px) {
+    
+
+}
+

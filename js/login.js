@@ -14,6 +14,8 @@ form_login.addEventListener('submit', function (event) {
 
     if (user.email === emailForm && user.senha === senhaForm) {
         alert('Logado com sucesso!')
+        window.location.href = "./game.html";
+        localStorage.setItem('logon', true);
     } else {
         alert('erro ao tentar logar')
     }

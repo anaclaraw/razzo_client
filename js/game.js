@@ -75,7 +75,8 @@ function createCard(equipe, emblema, title, text, valor, type) {
         newCard.className = 'col-md-6 mb-3';
         newCard.innerHTML = `
             <div class="driver-card ${equipe}">
-                <img src="../assets/${emblema}" class="card-img">
+            <figure class="teste1"><img src="../assets/${emblema}" class="card-img"> </figure>
+                
                 <div class="card-body">
                     <h4 class="card-title pr-20">${title}</h4>
                     <p class="card-text">${text} - $${valor.toFixed(2)}</p>

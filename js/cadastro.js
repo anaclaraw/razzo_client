@@ -30,6 +30,7 @@ form_cadastro.addEventListener('submit', function (event) {
     console.log(novoUser);
     if(novoUser){
         alert("Cadastrado com sucesso!")
+        window.location.href = "./game.html";
     }
 })
 
