@@ -233,7 +233,7 @@
     border-radius: 99999px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-    background-color: rgb(126, 207, 227);
+    background-color: var(--azul-claro);
     padding-right: 3%;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.657));
     margin: -10px 0;
@@ -269,7 +269,7 @@
     /* 33.33% da largura do carrossel */
     margin: 0 5px;
 
-    background: linear-gradient(135deg, #585e6a, #2c81c7);
+    background: linear-gradient(135deg, #05f0e5, #004068);
     color: white;
     padding: 10px 20px 20px 20px;
     border-radius: 10px;

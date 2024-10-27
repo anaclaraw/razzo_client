@@ -1,73 +1,72 @@
-footer {
-    font-family: 'Poppins', sans-serif;
-    background-color: #6b6b6b;
-    bottom: 0;
+:root {
+    --azul-claro: rgba(33, 205, 250, 1);
+    --azul-escuro: #0a3d62;
+    --cinza-escuro: #090909;
+    --branco: #ffffff;
+    --fonte-principal: "MuseoModerno", sans-serif;
+}
+
+.footer {
+    font-family: var(--fonte-principal);
+    background: linear-gradient(180deg, var(--azul-escuro), var(--cinza-escuro));
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    right: 0;
-    top:100px
+    padding: 20px 0;
+    top: 100px;
 }
 
-
-
 .footer-containers {
-    color: aliceblue;
-    height: 180px;
+    color: var(--branco);
     display: flex;
     align-items: center;
-    width: max-content;
+    gap: 40px;
+}
 
+.footer h2 {
+    color: var(--azul-claro);
+    font-size: 1.5em;
 }
 
 .footer-container {
-    margin: 10px;
-    margin-left: 10vw;
     padding-left: 20px;
-    display: flex;
-    width: max-content;
+}
+
+.footer-container h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-container ul {
     list-style: none;
-    align-items: flex-start;
-    flex-direction: column;
-    border-left: 0.5px solid rgba(240, 248, 255, 0.286);
+    padding: 0;
 }
 
 .footer-container a {
     text-decoration: none;
-    color: aliceblue;
-}
-
-.mincontent {
-    width: max-content;
+    color: var(--branco);
 }
 
 .copy {
-    color: aliceblue;
-    margin: 0;
-    padding: 10px;
+    color: var(--branco);
+    font-size: 0.9em;
+    margin: 10px 0;
 }
 
-.footer-container h4{
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-@media screen and (max-width:990px) {
+/* Responsividade */
+@media screen and (max-width: 990px) {
     .footer-containers {
-        font-size: x-small;
+        font-size: 0.85em;
+        flex-direction: column;
+        text-align: center;
     }
-
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
     .footer-container {
-        margin: 15px;
         padding-left: 5px;
-
-
+        margin: 10px 0;
     }
-
-  
 }
