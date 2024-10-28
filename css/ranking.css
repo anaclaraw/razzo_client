@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(rgba(2, 56, 89, 0.65), #1B1D23), url('../assets/fundorazzoo.jpg') no-repeat center center / cover;
+    padding: 20px 0;
+    box-shadow: 0 20px 40px #1B1D23;
+}
+
+.tamanho{
+    width: 60vw;
+}
+
+.fundo{
+    background-color: whitesmoke;
+}
+
+#primeiro{
+    color: whitesmoke; /* Altere a cor aqui */
+    font-weight: bold; /* Opcional */
+    font-size: 30px;
+    background-color: #FFDF00;
+    border: whitesmoke;
+    width: 10px;
+}
+
+#segundo{
+    color: whitesmoke; /* Altere a cor aqui */
+    font-weight: bold; /* Opcional */
+    font-size: 30px;
+    background-color: #C0C0C0;
+    border: whitesmoke;
+    width: 10px;
+}
+
+#terceiro{
+    color: whitesmoke; /* Altere a cor aqui */
+    font-weight: bold; /* Opcional */
+    font-size: 30px;
+    background-color: #cd7f32;
+    border: whitesmoke;
+    width: 10px;
+}
+
+#ranks{
+    color: black;
+    font-size: 30px;
+    width: 10px;
+}
+
+#nome{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    width: 100px;
+}
+
+#pontuacao{
+    width: 100px;
+    justify-items: center;
+    font-weight: bold;
+}
