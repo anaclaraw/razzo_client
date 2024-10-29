@@ -18,6 +18,7 @@ form_login.addEventListener('submit', function (event) {
         localStorage.setItem('logon', true);
     } else {
         alert('erro ao tentar logar')
+        localStorage.setItem('logon', false)
     }
     console.log(user.email, user.senha);
     console.log(emailForm, senhaForm);

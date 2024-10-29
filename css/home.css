@@ -66,7 +66,7 @@
 }
 
 .next_mapa_section img {
-    width: 90vw;
+    width: 85vw;
     border-radius: 2%;
     height: 100%;
 }
@@ -80,6 +80,10 @@
     margin-top: -300px;
 }
 
+.next_mapa_section h4:last-of-type {
+    margin-top: 50px;
+}
+
 .next_mapa_section h4 {
     font-size: small;
 }
@@ -91,6 +95,7 @@
 .next_mapa_section a{
     margin-top: -10px;
 }
+
 
 
 .titulo-section {
@@ -377,7 +382,9 @@
     .next_mapa_section h4 {
         font-size: medium;
     }
-
+    .next_mapa_section div{
+        font-size: large;
+    }
     .text {
         width: 60%;
         font-size: medium;
