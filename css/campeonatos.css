@@ -5,6 +5,10 @@ body {
     margin: 0;
     padding: 0;
     transition: 2s all; 
+
+}
+html{
+    scroll-behavior: smooth;
 }
 .hidden{
     display: none;
