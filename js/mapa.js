@@ -162,7 +162,7 @@ array = [
 let indices = []; // Armazena o índice de cada piloto
 let markers = []; // Armazena as posiçoes dos pilotos
 let numMarkers = 5; // Quantidade de pilotos
-let lista_pilotos = ['/assets/driver_brazilian.png','/assets/driver_belgican.png','/assets/driver_britanic.png','/assets/driver_cassidy.png','/assets/driver_pascal.png']
+let lista_pilotos = ['../assets/driver_brazilian.png','../assets/driver_belgican.png','../assets/driver_britanic.png','../assets/driver_cassidy.png','../assets/driver_pascal.png']
 // Inicializa os índices e os marcadores
 for (let i = 0; i < numMarkers; i++) {
     var icons = {
