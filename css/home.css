@@ -477,15 +477,16 @@
     /* Ajuste na descrição para centralização */
     .description_driver {
         text-align: left;
-        font-size: 1em;
+        font-size: 0.8em;
         padding: 10px 0;
         color: rgb(0, 0, 0);
     }
 
     .description_driver h1 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 700;
         margin-bottom: 8px;
+        text-align: left;
     }
 }
 
