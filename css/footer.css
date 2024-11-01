@@ -49,11 +49,15 @@
 
 /* Responsividade */
 @media screen and (max-width: 990px) {
-    .footer-container {
+    .footer-containers {
         font-size: 1em;
         flex-direction: column;
         text-align: center;
-        padding-left: 0;
+        
+    }
+
+    .footer-container {
+        padding-left: 0;;
     }
 
     .footer {
@@ -63,6 +67,6 @@
 
 @media screen and (max-width: 500px) {
     .footer-container {
-        margin: 10px 0;
+        margin: 10px 0px;
     }
 }

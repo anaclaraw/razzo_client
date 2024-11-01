@@ -26,7 +26,7 @@
     word-spacing: 5px;
     line-height: 1.5;
     font-weight: 200;
-     background:  rgba(23, 23, 23, 0.736);
+    background:  rgba(23, 23, 23, 0.637);
     transition: transform 0.3s ease, var(--cor-de-fundo) 0.3s ease;
     border-radius: 30rem 70rem;
     box-shadow: 5px 5px 10px var(--cor-de-fundo);
@@ -390,13 +390,16 @@
     } 
 
     .text {
-        width: 75%;
-        padding: 2% 5%;
-        transform: translateY(-100px);
+        width: 85%;
+        padding: 3% 4%;
+        transform: translateY(-80px);
         font-size: 0.7em;
-        border-radius: 2em;
-        margin: auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        margin: 0 auto;
+        background: rgba(23, 23, 23, 0.8);
     }
+
 
     .next_mapa_section{
         margin-top: 200px;
@@ -437,31 +440,52 @@
 
     .driver_article {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 5% 0;
-        border-radius: 10px;
+        justify-content: flex-start;
+        padding: 20px;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.95));
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin: 15px 0;
+        transition: transform 0.3s ease;
     }
 
+    .driver_article:hover {
+        transform: scale(1.03);
+    }
+
+    /* Estilização criativa para a imagem do piloto */
     .img_driver {
-        width: 50%; /* Aumenta o tamanho da imagem no mobile */
-        height: auto;
-        border-radius: 50%; /* Torna a imagem redonda */
-        margin: 10px; /* Espaço entre a imagem e a descrição */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 15px; /* Espaço ao lado do texto */
+        border: 3px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        transform: rotate(-5deg); /* Leve rotação */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: none;
+        padding-right: 0;
     }
 
+    .img_driver:hover {
+        transform: rotate(0deg) scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Ajuste na descrição para centralização */
     .description_driver {
-        text-align: center; /* Centraliza o texto da descrição */
-        font-size: 0.825em;
-        margin: 0 auto;
+        text-align: left;
+        font-size: 1em;
+        padding: 10px 0;
+        color: rgb(0, 0, 0);
     }
 
     .description_driver h1 {
-        margin-bottom: 5px;
-        font-size: 1.15em;
-
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 8px;
     }
 }
 
