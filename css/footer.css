@@ -1,20 +1,12 @@
-:root {
-    --azul-claro: rgba(33, 205, 250, 1);
-    --azul-escuro: #0a3d62;
-    --cinza-escuro: #090909;
-    --branco: #ffffff;
-    --fonte-principal: "MuseoModerno", sans-serif;
-}
-
 .footer {
     font-family: var(--fonte-principal);
-    background: linear-gradient(180deg, var(--azul-escuro), var(--cinza-escuro));
+    background: linear-gradient(180deg, var(--cor-de-fundo), var(--azul-escuro));
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 20px 0;
+    padding: 70px 0 20px 0;
     top: 100px;
 }
 
@@ -52,7 +44,7 @@
 .copy {
     color: var(--branco);
     font-size: 0.9em;
-    margin: 10px 0;
+    margin: 50px 0 20px 0;
 }
 
 /* Responsividade */

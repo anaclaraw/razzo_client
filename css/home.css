@@ -2,9 +2,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center; /* Certifique-se de centralizar o conteúdo */
+    overflow: hidden; /* Para garantir que não haja barras de rolagem */
 }
-
 
 .titulo-lorem {
     font-weight: 400;
@@ -13,8 +13,11 @@
 
 .apresentacao_section img {
     width: 100%;
-    height: auto;
-}
+    height: auto; 
+    object-fit: cover;
+    max-height: 1400px;
+} 
+
 
 .text {
     position: absolute;
@@ -23,14 +26,18 @@
     word-spacing: 5px;
     line-height: 1.5;
     font-weight: 200;
-    background-color: #1b1d23a7;
-    border-radius: 100px 200px;
+     background:  rgba(23, 23, 23, 0.897);
+    transition: transform 0.3s ease, var(--cor-de-fundo) 0.3s ease;
+    border-radius: 30rem 70rem;
     box-shadow: 5px 5px 10px var(--cor-de-fundo);
     color: rgb(222, 222, 222);
-    font-size: small;
+    transform: translateY(-170px);
+    margin-left: 50px;
 }
 
-
+.text p {
+    font-size: 1.2em;
+}
 
 #drivers_section {
     display: flex;
@@ -244,10 +251,6 @@
     margin: -10px 0;
 }
 
-
-
-
-
 .carousel-container {
     width: 100%;
     max-width: 100%;
@@ -255,7 +258,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 5% auto;
+    margin: 15% auto;
 }
 
 .carousel-wrapper {
@@ -366,10 +369,44 @@
 }
 
 
+@media (max-width: 1600px){
+    .text {
+        width: 70%;
+        padding: 1% 4%;
+        transform: translateY(-120px);
+        font-size: 1em;
+        border-radius: 3em;
+    }
+}
+
+
 @media (max-width: 768px) {
+
+    .text {
+        width: 80%;
+        padding: 2% 5%;
+        transform: translateY(-100px);
+        font-size: 0.9em;
+        border-radius: 2em;
+        margin: auto;
+    }
+
     .box {
         min-width: 100%;
-        margin: 0 5px;
+        margin: 5px 5px;
+    
+    }
+
+    .icon-space {
+        margin-right: 30px;
+    }
+
+    .box h2 {
+        margin-right: 30px
+    }
+    .box p {
+        width: 70%;
+        margin-right: 30px;
     }
 
     .carousel-container {
@@ -430,14 +467,11 @@
     .next_mapa_section div{
         font-size: large;
     }
-    .text {
-        width: 60%;
-        font-size: medium;
-    }
+  
     .title_drivers h1,
-.title_drivers h3 {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: xx-large;
-    padding: 0;
-}
+    .title_drivers h3 {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: xx-large;
+        padding: 0;
+    }
 }
