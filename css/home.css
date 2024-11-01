@@ -68,8 +68,8 @@
     justify-content: center;
     max-width: 100%;
     margin-top: 3%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 50px;
 }
 
 .next_mapa_section img {
@@ -150,8 +150,6 @@
 }
 
 
-
-
 .bnt-acompanhar {
     appearance: none;
     background-color: #FFFFFF;
@@ -222,9 +220,8 @@
 
 .description_driver {
     text-align: center;
-    font-weight: 100;
     letter-spacing: 1.5px;
-    font-size: small;
+    font-size: 1em;
     padding: 2%;
     margin-left: 5%;
     color: rgba(0, 0, 0, 0.87);
@@ -232,8 +229,9 @@
 
 }
 
+
 .description_driver h1 {
-    font-size: medium;
+    font-size: 1.8em;
     font-weight: 600;
     text-align: center;
     padding: 1%;
@@ -246,7 +244,7 @@
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     background-color: var(--azul-claro);
-    padding-right: 3%;
+    padding-right: 8%;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.657));
     margin: -10px 0;
 }
@@ -258,7 +256,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 15% auto;
+    margin: 12% auto;
 }
 
 .carousel-wrapper {
@@ -371,30 +369,42 @@
 
 @media (max-width: 1600px){
     .text {
-        width: 70%;
-        padding: 1% 4%;
+        width: 75%;
+        padding: 2% 5%;
         transform: translateY(-120px);
-        font-size: 1em;
+        font-size: 1.2em;
         border-radius: 3em;
     }
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 850px) {
+
+    .apresentacao_section img {
+        width: 100%;
+        height: 90vh; 
+        object-fit: cover;
+        /* clip-path: inset(0 0 23% 0); */
+
+    } 
 
     .text {
-        width: 80%;
+        width: 75%;
         padding: 2% 5%;
         transform: translateY(-100px);
-        font-size: 0.9em;
+        font-size: 0.7em;
         border-radius: 2em;
         margin: auto;
+    }
+
+    .next_mapa_section{
+        margin-top: 200px;
     }
 
     .box {
         min-width: 100%;
         margin: 5px 5px;
-    
     }
 
     .icon-space {
@@ -411,6 +421,7 @@
 
     .carousel-container {
         width: 100%;
+        margin: 15% 0;
     }
     .next_mapa_section{
         margin-top: -150px;
@@ -423,9 +434,38 @@
         margin-top: -25px;
         font-size: small;
     }
+
+    .driver_article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5% 0;
+        border-radius: 10px;
+    }
+
+    .img_driver {
+        width: 50%; /* Aumenta o tamanho da imagem no mobile */
+        height: auto;
+        border-radius: 50%; /* Torna a imagem redonda */
+        margin: 10px; /* Espaço entre a imagem e a descrição */
+    }
+
+    .description_driver {
+        text-align: center; /* Centraliza o texto da descrição */
+        font-size: 0.825em;
+        margin: 0 auto;
+    }
+
+    .description_driver h1 {
+        margin-bottom: 5px;
+        font-size: 1.15em;
+
+    }
 }
 
-
+/* PERIGO EM MEXER AQUI */
 @media (min-width: 600px) {
     .description_driver h1 {
         font-size: x-large;}
@@ -436,24 +476,6 @@
 
     .title_drivers {
         font-size: x-large;
-    }
-
-    .description_driver {
-        text-align: left;
-        font-size: medium;
-    }
-
-    .driver_article {
-
-        border-top-left-radius: 200px;
-        border-bottom-left-radius: 50px;
-    }
-
-    .img_driver {
-        width: 25%;
-
-        padding-right: 5%;
-        filter: drop-shadow(5px 3px 5px rgba(0, 0, 0, 0.657));
     }
 
     .pilotos_section h1,
