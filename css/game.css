@@ -31,6 +31,24 @@ body {
 .ms-2{
     color: #5CF2F2;
 }
+#btn-game{
+    transition: 0s all;
+    color: white;
+}
+#btn-game:hover{
+    opacity: 95;
+    background-color: #576c75;
+
+}
+
+.btn-before{
+    background-color: #2c6a83;
+    color: black;
+}
+
+.btn-after{
+    background-color: #53a9ca;
+}
 
 .driver-card {
     width: 18rem;

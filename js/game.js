@@ -8,6 +8,15 @@ function cardExists(title) {
     return false;
 }
 
+var btn_game = document.getElementById('btn-game');
+
+btn_game.addEventListener('click', () => {
+    // Alterna entre as classes de cor
+    btn_game.classList.toggle('btn-after');
+    btn_game.classList.toggle('btn-before');
+    alert("Escalação salva!")
+});
+
 function updateMoedasPilotos(moedasDelta, pilotosDelta, equipesDelta) {
     var moedasRestantesElem = document.getElementById('moedas-restantes');
     var pilotosSelecionadosElem = document.getElementById('pilotos-selecionados');
