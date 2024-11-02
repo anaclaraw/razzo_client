@@ -18,21 +18,19 @@
     max-height: 1400px;
 } 
 
-
 .text {
+  
     position: absolute;
     width: 80%;
     padding: 1% 5%;
     word-spacing: 5px;
     line-height: 1.5;
     font-weight: 200;
-    background:  rgba(23, 23, 23, 0.637);
-    transition: transform 0.3s ease, var(--cor-de-fundo) 0.3s ease;
-    border-radius: 30rem 70rem;
+    background-color: #1b1d23a7;
+    border-radius: 100px 200px;
     box-shadow: 5px 5px 10px var(--cor-de-fundo);
     color: rgb(222, 222, 222);
-    transform: translateY(-170px);
-    margin-left: 50px;
+    font-size: small;
 }
 
 .text p {
@@ -68,8 +66,8 @@
     justify-content: center;
     max-width: 100%;
     margin-top: 3%;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 20px;
 }
 
 .next_mapa_section img {
@@ -394,10 +392,9 @@
         padding: 3% 4%;
         transform: translateY(-80px);
         font-size: 0.7em;
-        border-radius: 1.5em;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+       
         margin: 0 auto;
-        background: rgba(23, 23, 23, 0.8);
+       
     }
 
 
@@ -457,16 +454,9 @@
 
     /* Estilização criativa para a imagem do piloto */
     .img_driver {
-        width: 120px;
+        min-width: 120px;
         height: 100px;
-        border-radius: 50%;
-        margin-left: 15px; /* Espaço ao lado do texto */
-        border: 3px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        transform: rotate(-5deg); /* Leve rotação */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background: none;
-        padding-right: 0;
+     
     }
 
     .img_driver:hover {
