@@ -1,12 +1,14 @@
-.ranking-container{
+.ranking-container {
     width: 80%;
     margin: 5% auto;
 }
-.ranking-container h1{
+
+.ranking-container h1 {
     font-weight: 600;
     text-align: center;
     padding-bottom: 1%;
 }
+
 .ranking-container ul {
     list-style-type: none;
     padding: 0;
@@ -60,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* Responsive columns */
-    margin: 5% auto;
+    margin: 20% auto;
     border-radius: 20px;
     overflow-x: scroll;
 }
@@ -106,6 +108,7 @@
         grid-template-columns: 1fr;
         /* Stack columns vertically on smaller screens */
     }
+
 }
 
 @media (min-width: 768px) {
@@ -121,8 +124,14 @@
     ::-webkit-scrollbar-thumb {
         background: #2a2424;
     }
-    .ranking-container{
-        width: 60%;}
+
+    .ranking-container {
+        width: 60%;
+    }
+
+    .container {
+        margin: 5% auto;
+    }
 }
 
 .form-container {

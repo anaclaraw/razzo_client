@@ -1,6 +1,15 @@
+let zoomValue = 17.5
+if (window.innerWidth < 500) {
+    zoomValue = 16
+}else{
+    zoomValue = 17.5
+    }
+
+
 var map = L.map('map', {
     scrollWheelZoom: false, // Desabilita o zoom pelo scroll
-}).setView([-23.52636, -46.63850], 17.5);
+}).setView([-23.52636, -46.63850], zoomValue);
+
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 19,
@@ -200,24 +209,24 @@ moveMarkers(); // Inicia o movimento dos marcadores
 function realizarCompra() {
     // Listas de variações
     const descricoes = [
-        "Aposta realizada com sucesso! Boa sorte!",
-        "Você comprou uma nova aposta! Vamos ver o resultado.",
-        "Aposta confirmada! Agora é só torcer!",
-        "Compra concluída! O jogo está rolando!"
+        "Dennis vai terminar em Primeiro?",
+        "Cassidy vai pergar um bust na quarta volta?",
+        "Vandoorne vai ficar sem bateria na próxima volta?",
+        "Sérgio vai pegar o bust na quinta volta?"
     ];
 
     const coresDeFundo = [
-        "#ffcccb", // Vermelho claro
-        "#d4edda", // Verde claro
-        "#cce5ff", // Azul claro
-        "#fff3cd"  // Amarelo claro
+        "#b3d1ff", // Ciano claro
+        "#f0ccfc", // Vermelho claro
+        "#fff3cd",  // Amarelo claro
+        "#cce5ff" // Azul claro
     ];
 
     const valores = [
-        "Custa 20 moedas | Ganha 100 moedas",
-        "Custa 15 moedas | Ganha 75 moedas",
-        "Custa 30 moedas | Ganha 150 moedas",
-        "Custa 25 moedas | Ganha 125 moedas"
+        "Custa 200 moedas | Ganha 500 moedas",
+        "Custa 150 moedas | Ganha 600 moedas",
+        "Custa 300 moedas | Ganha 500 moedas",
+        "Custa 250 moedas | Ganha 550 moedas"
     ];
 
     // Escolher valores aleatórios das listas
