@@ -471,7 +471,7 @@
 
     .img_driver:hover {
         transform: rotate(0deg) scale(1.05);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.432);
     }
 
     /* Ajuste na descrição para centralização */
