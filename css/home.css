@@ -456,12 +456,18 @@
     .img_driver {
         min-width: 120px;
         height: 100px;
-     
+        border-bottom-right-radius: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-radius: 200px;
+    border-bottom-left-radius: 10px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.215));
+    padding-right: 2%;
     }
 
     .img_driver:hover {
         transform: rotate(0deg) scale(1.05);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.198);
     }
 
     /* Ajuste na descrição para centralização */

@@ -19,6 +19,11 @@
 
 
 <body>
+    <script>
+        if (localStorage.getItem('logon') != 'true') {
+            alert('Faça seu cadastro para ter acesso a todas as páginas, use dados fictícios se preferir).')
+        }
+    </script>
     <header class="header">
         <a href="/index.html" class="logo">Razzo</a>
         <nav>
@@ -45,7 +50,7 @@
             <h2 class="titulo-lorem">A Razzo</h2>
             <p>
                 Nossa plataforma oferece um sistema de acompanhamento em tempo real das corridas, onde os usuários podem
-                fazer seus palpites sobre a ordem dos rankings e eventos das provas. Os palpites utilizam moedas, com
+                fazer seus palpites sobre a ordem dos rankings e eventos das provas. A criação dos seus rankings e palpites utilizam moedas, com
                 ganhos proporcionais ao acerto dos resultados. Ao acumularem pontos, os usuários podem ganhar prêmios e
                 concorrer a um super prêmio ao final de cada temporada.
             </p>
@@ -54,7 +59,7 @@
 
     <section class="next_mapa_section">
         <h4 class="titulo-corrida">Próxima Corrida F1</h4>
-        <h1>São Paulo - Brasil</h1>
+        <h1>GP de Las Vegas - Las Vegas </h1>
         <div id="countdown-0"></div>
         <img class="next-mapa" src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/11/PHO20211114002.jpg"
             alt="">

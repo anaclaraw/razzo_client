@@ -1,6 +1,6 @@
 // Array com as datas de contagem regressiva
 const countdownDates = [
-    new Date("2024-11-01T00:00:00").getTime(), // Exemplo de data 2
+    new Date("2024-12-23T00:00:00").getTime(), // Exemplo de data 2
     new Date("2024-12-07T23:59:59").getTime(), // Exemplo de data 1
     // Adicione mais datas conforme necessário
 ];

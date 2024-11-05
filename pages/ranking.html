@@ -29,7 +29,7 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="/">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./campeonato.html">Campeonato</a></li>
                 <li><a href="./mapa.html">Acompanhar</a></li>
                 <li><a href="./game.html">Game Razzo</a></li>
@@ -43,10 +43,14 @@
 
     <div class="container mt-5 d-flex">
         <div class="container align-middle tamanho">
-            <ul class="nav nav-tabs tamanho" id="ranking" role="tablist">
+            <ul class="nav nav-tabs tamanho conatiner-buttons" id="ranking" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active fundo" data-toggle="tab" href="#global" role="tab" aria-controls="global"
+                    <a class="nav-link  fundo" data-toggle="tab" href="#global" role="tab" aria-controls="global"
                         aria-selected="true">Global</a>
+                </li>
+                <li class="nav-item" id="friends-button">
+                    <!-- <a class="nav-link fundo" data-toggle="tab" href="#friends" role="tab" aria-controls="friends"
+                        aria-selected="false" onclick="preencherTabela()">Friends</a> -->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fundo" data-toggle="tab" href="#formulae" role="tab" aria-controls="formulae"
@@ -54,12 +58,13 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fundo" data-toggle="tab" href="#formula1" role="tab" aria-controls="formula1"
-                        aria-selected="false">Fórmula 1</a>
+                        aria-selected="false">F1</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fundo" data-toggle="tab" href="#rally" role="tab" aria-controls="rally"
                         aria-selected="false">Rally</a>
                 </li>
+                
                 <li class="nav-item">
                     <a class="nav-link fundo" data-toggle="tab" href="#wec" role="tab" aria-controls="wec"
                         aria-selected="false">WEC</a>
@@ -75,148 +80,235 @@
                         <tbody>
                             <tr>
                                 <td id="primeiro">1</td>
-                                <td id="nome">Gordon McKenzie</td>
-                                <td id="pontuacao">
+                                <td class="nome">Gordon McKenzie</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy2500</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td id="segundo">2</td>
-                                <td id="nome">Cecilia Keebler</td>
-                                <td id="pontuacao">
+                                <td class="nome">Cecilia Keebler</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy2200</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td id="terceiro">3</td>
-                                <td id="nome">Katheryn Turcotte</td>
-                                <td id="pontuacao">
+                                <td class="nome">Katheryn Turcotte</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy2100</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">4</td>
-                                <td id="nome">Amina Nienow</td>
-                                <td id="pontuacao">
+                                <td class="ranks">4</td>
+                                <td class="nome">Amina Nienow</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy2000</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">5</td>
-                                <td id="nome">Mozelle Kessler</td>
-                                <td id="pontuacao">
+                                <td class="ranks">5</td>
+                                <td class="nome">Mozelle Kessler</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1800</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">6</td>
-                                <td id="nome">Gaston Swift</td>
-                                <td id="pontuacao">
+                                <td class="ranks">6</td>
+                                <td class="nome">Gaston Swift</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1700</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">7</td>
-                                <td id="nome">Amaya Jacobson</td>
-                                <td id="pontuacao">
+                                <td class="ranks">7</td>
+                                <td class="nome">Amaya Jacobson</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1700</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">8</td>
-                                <td id="nome">Bernadette Larson</td>
-                                <td id="pontuacao">
+                                <td class="ranks">8</td>
+                                <td class="nome">Bernadette Larson</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1600</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">9</td>
-                                <td id="nome">Helene Jenkins</td>
-                                <td id="pontuacao">
+                                <td class="ranks">9</td>
+                                <td class="nome">Helene Jenkins</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1500</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td id="ranks">10</td>
-                                <td id="nome">Imani Prosacco</td>
-                                <td id="pontuacao">
+                                <td class="ranks">10</td>
+                                <td class="nome">Imani Prosacco</td>
+                                <td class="pontuacao">
                                     <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- -->
+                <div class="tab-pane fade" id="friends">
+                    <table class="table table-hover table-striped align-middle">
+                      <tbody></tbody> <!-- Limpo para ser preenchido pelo JavaScript -->
+                    </table>
+                  </div>
+                  <!-- <div class="tab-pane fade" id="friends">
+                    <table class="table table-hover table-striped align-middle">
+                        <tbody>
+                            <tbody>
+                                <tr>
+                                    <td id="primeiro">1</td>
+                                    <td class="nome">Cecilia Keebler</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy1400</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="segundo">2</td>
+                                    <td class="nome">Francisco Johns</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy1100</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="terceiro">3</td>
+                                    <td class="nome">Amaya Jacobson</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy1050</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Silvia Nolan</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy1000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Mozelle Kessler</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy900</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Olga Kohler Jr.</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy800</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy700</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Bernadette Larson</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy600</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Gerardo Tranto</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy500</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Imani Prosacco</td>
+                                    <td class="pontuacao">
+                                        <p class="material-symbols-outlined" id="pontos">trophy400</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </tbody>
+                    </table>
+                </div>  -->
+                
+                 <!-- -->
                 <div class="tab-pane fade" id="formulae">
                     <table class="table table-hover table-striped align-middle">
                         <tbody>
                             <tbody>
                                 <tr>
                                     <td id="primeiro">1</td>
-                                    <td id="nome">Cecilia Keebler</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Cecilia Keebler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="segundo">2</td>
-                                    <td id="nome">Gordon McKenzie</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Gordon McKenzie</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1100</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="terceiro">3</td>
-                                    <td id="nome">Clare Schiller</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Clare Schiller</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1050</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">4</td>
-                                    <td id="nome">Amina Nienow</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Amina Nienow</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1000</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">5</td>
-                                    <td id="nome">Mozelle Kessler</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Mozelle Kessler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy900</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">6</td>
-                                    <td id="nome">Liliana Rempel</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Liliana Rempel</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy800</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">7</td>
-                                    <td id="nome">Katheryn Turcotte</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy700</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">8</td>
-                                    <td id="nome">Selina Sanford</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Selina Sanford</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy600</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">9</td>
-                                    <td id="nome">Helene Jenkins</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Helene Jenkins</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy500</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">10</td>
-                                    <td id="nome">Wesley Klocko</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Wesley Klocko</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy400</p>
                                     </td>
                                 </tr>
@@ -230,71 +322,71 @@
                             <tbody>
                                 <tr>
                                     <td id="primeiro">1</td>
-                                    <td id="nome">Julie O'Hara</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Julie O'Hara</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="segundo">2</td>
-                                    <td id="nome">Gordon McKenzie</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Gordon McKenzie</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1100</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="terceiro">3</td>
-                                    <td id="nome">Lorena Weber</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Lorena Weber</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1050</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">4</td>
-                                    <td id="nome">Amina Nienow</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Amina Nienow</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1000</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">5</td>
-                                    <td id="nome">Cassandra Beahanr</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Cassandra Beahanr</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy900</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">6</td>
-                                    <td id="nome">Gaston Swift</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Gaston Swift</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy800</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">7</td>
-                                    <td id="nome">Katheryn Turcotte</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy700</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">8</td>
-                                    <td id="nome">Wesley Lueilwitz</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Wesley Lueilwitz</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy600</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">9</td>
-                                    <td id="nome">Helene Jenkins</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Helene Jenkins</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy500</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">10</td>
-                                    <td id="nome">Victoria Swift Jr.</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Victoria Swift Jr.</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy400</p>
                                     </td>
                                 </tr>
@@ -308,71 +400,71 @@
                             <tbody>
                                 <tr>
                                     <td id="primeiro">1</td>
-                                    <td id="nome">Cecilia Keebler</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Cecilia Keebler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="segundo">2</td>
-                                    <td id="nome">Francisco Johns</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Francisco Johns</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1100</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="terceiro">3</td>
-                                    <td id="nome">Amaya Jacobson</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Amaya Jacobson</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1050</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">4</td>
-                                    <td id="nome">Silvia Nolan</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Silvia Nolan</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1000</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">5</td>
-                                    <td id="nome">Mozelle Kessler</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Mozelle Kessler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy900</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">6</td>
-                                    <td id="nome">Olga Kohler Jr.</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Olga Kohler Jr.</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy800</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">7</td>
-                                    <td id="nome">Katheryn Turcotte</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy700</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">8</td>
-                                    <td id="nome">Bernadette Larson</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Bernadette Larson</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy600</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">9</td>
-                                    <td id="nome">Gerardo Tranto</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Gerardo Tranto</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy500</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">10</td>
-                                    <td id="nome">Imani Prosacco</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Imani Prosacco</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy400</p>
                                     </td>
                                 </tr>
@@ -386,71 +478,71 @@
                             <tbody>
                                 <tr>
                                     <td id="primeiro">1</td>
-                                    <td id="nome">Shirley Mertz</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Shirley Mertz</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="segundo">2</td>
-                                    <td id="nome">Amos Dickens</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Amos Dickens</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1100</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="terceiro">3</td>
-                                    <td id="nome">Amaya Jacobson</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Amaya Jacobson</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1050</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">4</td>
-                                    <td id="nome">Sammy Haley</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Sammy Haley</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1000</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">5</td>
-                                    <td id="nome">Mozelle Kessler</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Mozelle Kessler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy900</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">6</td>
-                                    <td id="nome">Lila Erdman</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Lila Erdman</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy800</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">7</td>
-                                    <td id="nome">Katheryn Turcotte</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy700</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">8</td>
-                                    <td id="nome">Katherine Robel</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Katherine Robel</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy600</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">9</td>
-                                    <td id="nome">Helene Jenkins</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Helene Jenkins</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy500</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">10</td>
-                                    <td id="nome">Fred Howell</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Fred Howell</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy400</p>
                                     </td>
                                 </tr>
@@ -464,71 +556,71 @@
                             <tbody>
                                 <tr>
                                     <td id="primeiro">1</td>
-                                    <td id="nome">Rodney Anderson</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Rodney Anderson</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1400</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="segundo">2</td>
-                                    <td id="nome">Kelvin Welch</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Kelvin Welch</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1100</p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="terceiro">3</td>
-                                    <td id="nome">Annette Witting</td>
-                                    <td id="pontuacao">
+                                    <td class="nome">Annette Witting</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1050</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">4</td>
-                                    <td id="nome">Amina Nienow</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">4</td>
+                                    <td class="nome">Amina Nienow</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy1000</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">5</td>
-                                    <td id="nome">Mozelle Kessler</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">5</td>
+                                    <td class="nome">Mozelle Kessler</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy900</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">6</td>
-                                    <td id="nome">Bridget Morar</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">6</td>
+                                    <td class="nome">Bridget Morar</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy800</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">7</td>
-                                    <td id="nome">Katheryn Turcotte</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">7</td>
+                                    <td class="nome">Katheryn Turcotte</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy700</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">8</td>
-                                    <td id="nome">Opal Wisoky</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">8</td>
+                                    <td class="nome">Opal Wisoky</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy600</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">9</td>
-                                    <td id="nome">Blanche Keeling</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">9</td>
+                                    <td class="nome">Blanche Keeling</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy500</p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="ranks">10</td>
-                                    <td id="nome">Imani Prosacco</td>
-                                    <td id="pontuacao">
+                                    <td class="ranks">10</td>
+                                    <td class="nome">Imani Prosacco</td>
+                                    <td class="pontuacao">
                                         <p class="material-symbols-outlined" id="pontos">trophy400</p>
                                     </td>
                                 </tr>
@@ -571,4 +663,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/game.js"></script>
+    <script src="../js/ranking.js"></script>
 </body>

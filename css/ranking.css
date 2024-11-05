@@ -6,6 +6,7 @@ body {
 
 .tamanho{
     width: 60vw;
+    margin: 0 auto;
 }
 
 .fundo{
@@ -39,21 +40,64 @@ body {
     width: 10px;
 }
 
-#ranks{
+.ranks{
     color: black;
     font-size: 30px;
     width: 10px;
 }
 
-#nome{
+.nome{
     font-family: sans-serif;
     font-weight: bold;
     font-size: large;
-    width: 100px;
 }
 
-#pontuacao{
+.pontuacao{
     width: 100px;
     justify-items: center;
     font-weight: bold;
+}
+
+.conatiner-buttons li a, .active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 968px) {
+
+    .conatiner-buttons{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        
+    }
+    .conatiner-buttons li{
+        border-radius: 5px;
+        border: 1px solid rgba(4, 22, 80, 0.583);
+    }
+    /* .conatiner-buttons li {
+        border-radius: 100px;
+        border-top-left-radius: 100px;
+        background-color:whitesmoke;
+        
+        
+    }
+   
+    .fundo{
+        background-color: transparent;
+    }
+    .conatiner-buttons li::after{
+        border-radius: 100px;
+        background-color:rgb(74, 205, 245);
+    } */
+
+    .tamanho{
+        width: 90vw;
+    }
+    
+}
+
+@media (min-width: 1068px) {
+    .conatiner-buttons{
+        gap: 2px;
+    }
 }
