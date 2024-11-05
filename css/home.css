@@ -2,8 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; /* Certifique-se de centralizar o conteúdo */
-    overflow: hidden; /* Para garantir que não haja barras de rolagem */
+    justify-content: center;
+    /* Certifique-se de centralizar o conteúdo */
+    overflow: hidden;
+    /* Para garantir que não haja barras de rolagem */
 }
 
 .titulo-lorem {
@@ -13,13 +15,13 @@
 
 .apresentacao_section img {
     width: 100%;
-    height: auto; 
+    height: auto;
     object-fit: cover;
     max-height: 1400px;
-} 
+}
 
 .text {
-  
+
     position: absolute;
     width: 80%;
     padding: 1% 5%;
@@ -54,7 +56,7 @@
 .title_drivers h1,
 .title_drivers h3 {
     color: rgba(255, 255, 255, 0.87);
-    font-size:large;
+    font-size: large;
     text-align: center;
     padding: 1%;
 }
@@ -97,7 +99,7 @@
     font-size: medium;
 }
 
-.next_mapa_section a{
+.next_mapa_section a {
     margin-top: -10px;
 }
 
@@ -268,13 +270,13 @@
 }
 
 .box {
-    min-width: 28%; 
+    min-width: 28%;
     margin: 0 5px;
     padding: 20px 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     color: var(--branco);
-    background: linear-gradient(135deg, rgb(0,0,0), var(--cor-de-fundo));
+    background: linear-gradient(135deg, rgb(0, 0, 0), var(--cor-de-fundo));
     transition: transform 0.3s ease, var(--cor-de-fundo) 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -365,7 +367,7 @@
 }
 
 
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
     .text {
         width: 75%;
         padding: 2% 5%;
@@ -381,24 +383,24 @@
 
     .apresentacao_section img {
         width: 100%;
-        height: 90vh; 
+        height: 90vh;
         object-fit: cover;
         /* clip-path: inset(0 0 23% 0); */
 
-    } 
+    }
 
     .text {
         width: 85%;
         padding: 3% 4%;
         transform: translateY(-80px);
         font-size: 0.7em;
-       
+
         margin: 0 auto;
-       
+
     }
 
 
-    .next_mapa_section{
+    .next_mapa_section {
         margin-top: 200px;
     }
 
@@ -414,6 +416,7 @@
     .box h2 {
         margin-right: 30px
     }
+
     .box p {
         width: 70%;
         margin-right: 30px;
@@ -423,13 +426,16 @@
         width: 100%;
         margin: 35% 0;
     }
-    .next_mapa_section{
+
+    .next_mapa_section {
         margin-top: -150px;
     }
-    .bnt-acompanhar{
+
+    .bnt-acompanhar {
         padding: 10px;
         font-size: small;
     }
+
     .bnt-acompanhar {
         margin-top: -25px;
         font-size: small;
@@ -457,12 +463,12 @@
         min-width: 120px;
         height: 100px;
         border-bottom-right-radius: 50px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 20px;
-    border-radius: 200px;
-    border-bottom-left-radius: 10px;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.215));
-    padding-right: 2%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 20px;
+        border-radius: 200px;
+        border-bottom-left-radius: 10px;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.215));
+        padding-right: 2%;
     }
 
     .img_driver:hover {
@@ -489,7 +495,9 @@
 /* PERIGO EM MEXER AQUI */
 @media (min-width: 600px) {
     .description_driver h1 {
-        font-size: x-large;}
+        font-size: x-large;
+    }
+
     #drivers_section {
 
         width: 100%;
@@ -507,10 +515,11 @@
     .next_mapa_section h4 {
         font-size: medium;
     }
-    .next_mapa_section div{
+
+    .next_mapa_section div {
         font-size: large;
     }
-  
+
     .title_drivers h1,
     .title_drivers h3 {
         color: rgba(255, 255, 255, 0.87);

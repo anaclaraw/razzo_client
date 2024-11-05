@@ -74,22 +74,7 @@ body {
         border-radius: 5px;
         border: 1px solid rgba(4, 22, 80, 0.583);
     }
-    /* .conatiner-buttons li {
-        border-radius: 100px;
-        border-top-left-radius: 100px;
-        background-color:whitesmoke;
-        
-        
-    }
-   
-    .fundo{
-        background-color: transparent;
-    }
-    .conatiner-buttons li::after{
-        border-radius: 100px;
-        background-color:rgb(74, 205, 245);
-    } */
-
+ 
     .tamanho{
         width: 90vw;
     }
