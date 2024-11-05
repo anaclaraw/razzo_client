@@ -20,9 +20,11 @@
 
 <body>
     <script>
-        if (localStorage.getItem('logon') != 'true') {
-            alert('Faça seu cadastro para ter acesso a todas as páginas, use dados fictícios se preferir).')
+        setTimeout(() => {
+        if (localStorage.getItem('logon') !== 'true') {
+            alert('Faça seu cadastro para ter acesso a todas as páginas, use dados fictícios se preferir.');
         }
+    }, 8000);
     </script>
     <header class="header">
         <a href="/index.html" class="logo">Razzo</a>
